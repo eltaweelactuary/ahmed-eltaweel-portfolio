@@ -92,6 +92,8 @@ body {
     .hero p {
         font-size: 0.9rem;
         padding: 0 10px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .hero-visual {
@@ -103,12 +105,16 @@ body {
         height: 120px;
     }
 
+    /* Fix buttons - stack vertically on mobile */
     .btn-primary,
     .btn-secondary {
-        padding: 10px 20px;
-        font-size: 0.85rem;
-        display: inline-block;
-        margin: 5px;
+        display: block;
+        width: 80%;
+        max-width: 250px;
+        margin: 10px auto;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        text-align: center;
     }
 
     /* Chapter Sections */

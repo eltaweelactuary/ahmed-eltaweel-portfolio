@@ -35,27 +35,29 @@ AI is a discipline, not a shortcut. True mastery requires deep understanding of 
 
 ## 🚀 Projects Vault
 
-### [1. Bilingual Telegram AI Bot](https://github.com/eltaweelactuary/ahmed-eltaweel-portfolio/tree/telegram-bot)
+> 🔒 **Note:** The source code for these projects is private. Access is available upon request for authorized collaborators and recruiters.
+
+### 1. Bilingual Telegram AI Bot
 Enterprise-grade AI customer agent with RAG-based knowledge retrieval and bilingual support.
 - **Stack:** Python, Gemini AI, RAG
 
-### [2. Electric Company AI System](https://github.com/eltaweelactuary/ahmed-eltaweel-portfolio/tree/electric-web-app)
+### 2. Electric Company AI System
 Multi-agent AI system for utility management, optimizing resource allocation and customer service logic.
 - **Stack:** Python, CrewAI, Multi-Agent Orchestration
 
-### [3. Smart DMS (Document Management)](https://github.com/eltaweelactuary/ahmed-eltaweel-portfolio/tree/smart-dms)
+### 3. Smart DMS (Document Management)
 Secure document indexing, storage, and intelligent retrieval system.
 - **Stack:** React, Python, SQLite
 
-### [4. Tax Compliance Portal](https://github.com/eltaweelactuary/ahmed-eltaweel-portfolio/tree/tax-bot)
+### 4. Tax Compliance Portal
 National-scale dashboard for tax reporting and automated compliance validation.
 - **Stack:** HTML/CSS/JS, Data Visualization
 
-### [5. Wasel Green Path (Sustainability AI)](https://github.com/eltaweelactuary/ahmed-eltaweel-portfolio/tree/wasel-green-path)
+### 5. Wasel Green Path (Sustainability AI)
 AI agent for sustainable transportation route optimization.
 - **Stack:** Python, CrewAI, Google Maps API
 
-### [6. AI Newsletter Crew](https://github.com/eltaweelactuary/ahmed-eltaweel-portfolio/tree/ai-newsletter)
+### 6. AI Newsletter Crew
 Automated multi-agent news research and generation system.
 - **Stack:** Python, CrewAI, Web Scraping, LLMs
 
