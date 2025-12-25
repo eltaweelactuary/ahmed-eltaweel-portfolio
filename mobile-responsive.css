@@ -1,0 +1,149 @@
+/* ============================================
+   MOBILE RESPONSIVE STYLES
+   Add this file to your HTML or append to style.css
+   ============================================ */
+
+/* Tablet and smaller devices */
+@media screen and (max-width: 1024px) {
+    .chapter-section {
+        padding: 60px 30px;
+    }
+
+    .service-grid,
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+
+    /* Navigation - Hide links, keep logo and support button */
+    .glass-nav {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .btn-support {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 120px 20px 60px;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Chapter Sections */
+    .chapter-section {
+        padding: 40px 20px;
+    }
+
+    .chapter-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .chapter-section h3 {
+        font-size: 1.3rem;
+    }
+
+    /* All Grids - Single Column on Mobile */
+    .service-grid,
+    .project-grid,
+    .honor-grid,
+    .training-grid,
+    .vault-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Cards */
+    .service-card,
+    .project-card,
+    .honor-card,
+    .training-card,
+    .contact-item {
+        padding: 20px;
+    }
+
+    /* Timeline */
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: 0;
+    }
+
+    /* Tech tags */
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .chapter-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .service-card h4,
+    .project-card h4 {
+        font-size: 1rem;
+    }
+}
