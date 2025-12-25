@@ -1,30 +1,46 @@
-# Ahmed Eltaweel - Premium Portfolio
+# Ahmed Eltaweel | AI Engineer & Actuary Portfolio
 
-A state-of-the-art, responsive portfolio website built with Vanilla HTML, CSS, and JS, featuring glassmorphism and dynamic animations.
+Welcome to my professional portfolio. I am an **AI Product Solution Architect** at Konecta Global and an **Academic Researcher in Data Science**, specializing in bridging the gap between complex business requirements and cutting-edge AI/Actuarial solutions.
 
-## 🚀 Deployment Instructions for GitHub Pages
+---
 
-To publish this portfolio online for free using GitHub Pages, follow these simple steps:
+## 🌟 Professional Focus
+- **AI Architecture:** Designing multi-agent systems, RAG pipelines, and enterprise GenAI ecosystems.
+- **Data Analytics:** Transforming complex datasets into strategic insights via Power BI, SQL, and advanced statistical modeling.
+- **Actuarial Science:** Applying rigorous mathematical models to pricing, risk reserves, and financial positioning.
+- **Academic Research:** Deep learning applications in healthcare telemetry and actuarial risk.
 
-1. **Create a GitHub Repository**: 
-   - Go to [GitHub](https://github.com) and create a new repository (e.g., `ahmed-eltaweel-portfolio`).
-2. **Upload Files**:
-   - Upload the contents of the `portfolio-ahmed` folder (`index.html`, `style.css`, `script.js`) directly to the root of your new repository.
-3. **Enable GitHub Pages**:
-   - Go to **Settings** > **Pages** in your repository.
-   - Under **Build and deployment**, set the source to `Deploy from a branch`.
-   - Select the `main` branch and the `/ (root)` folder, then click **Save**.
-4. **View Your Site**:
-   - After a minute, your site will be live at `https://yourusername.github.io/ahmed-eltaweel-portfolio/`.
+---
 
-## ✨ Features
-- **Glassmorphism Design**: High-end UI with translucent layers.
-- **Scroll Animations**: Dynamic reveal effects on scroll.
-- **Custom Cursor**: Interactive glow effect following the mouse.
-- **Responsive**: Optimised for mobile and desktop.
+## 🚀 Featured Projects
 
-## 🛠 Tech Stack
-- HTML5 / CSS3 (Custom Properties & Grid)
-- JavaScript (Vanilla)
-- [ScrollReveal.js](https://scrollrevealjs.org/)
-- [FontAwesome](https://fontawesome.com/)
+### [1. Bilingual Telegram AI Bot](projects/telegram-bot/)
+Enterprise-grade AI customer agent with RAG-based knowledge retrieval and bilingual support.
+- **Stack:** Python, Gemini AI, RAG.
+
+### [2. Electric Company AI System](projects/electric-ai/)
+Multi-agent AI system for utility management, optimizing resource allocation and customer service logic.
+- **Stack:** Python, CrewAI, multi-agent orchestration.
+
+### [3. Smart DMS (Document Management)](projects/smart-dms/)
+Secure document indexing, storage, and intelligent retrieval system.
+- **Stack:** React, Python, SQLite.
+
+### [4. BioAge Research Project](projects/thesis-research/)
+Advanced data science research on biological age estimation using wearable telemetry.
+- **Stack:** Python, DeepSurv, Machine Learning.
+
+### [5. Tax Compliance Portal](projects/tax-portal/)
+National-scale dashboard for tax reporting and automated compliance validation.
+- **Stack:** HTML/CSS/JS, Data Visualization.
+
+---
+
+## 📬 Connect with Me
+- **LinkedIn:** [Ahmed Eltaweel](https://linkedin.com/in/ahmed-eltaweel-5b53a38b)
+- **WhatsApp:** [+20 1111 907 502](https://wa.me/201111907502)
+- **Telegram:** [@eltaweelactuary](https://t.me/eltaweelactuary)
+- **Email:** [eltaweel.actuary@gmail.com](mailto:eltaweel.actuary@gmail.com)
+
+---
+*© 2024 Ahmed Eltaweel. Dedicated to AI and Actuarial Excellence.*
