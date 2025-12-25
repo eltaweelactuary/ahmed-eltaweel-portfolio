@@ -1,0 +1,2 @@
+deepsurv_train_cindex,deepsurv_val_cindex,deepsurv_test_cindex,age_baseline_cindex,phenoage_cindex,improvement_over_age
+0.8633590563963294,0.8730600639734628,0.8795687335068577,0.8698673668795589,0.875,0.011152696372666726

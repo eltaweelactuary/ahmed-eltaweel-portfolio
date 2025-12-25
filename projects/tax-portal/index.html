@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة الالتزام الضريبي والكشف عن الغش</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="portalContainer">
+        <header>
+            <div class="header-branding">
+                <div class="logo client-logo" title="مصلحة الضرائب المصرية">
+                    <!-- Egyptian Tax Authority Logo -->
+                    <img src="../unnamed (1).png" alt="مصلحة الضرائب المصرية" class="logo-img eta-header-logo">
+                </div>
+                <div class="header-text">
+                    <h1>مصلحة الضرائب المصرية</h1>
+                    <p class="tagline">"مصلحتك أولاً"</p>
+                </div>
+                <div class="logo company-logo" title="Konecta">
+                    <!-- Konecta Logo Restored to Header -->
+                    <img src="../Didi.png" alt="Konecta" class="logo-img konecta-header-logo">
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content" id="mainContent">
+            <section class="form-section">
+                <h2>نموذج المعاملة الضريبية</h2>
+                <form id="taxForm">
+                    <div class="form-group">
+                        <label for="fullName">الاسم الكامل للممول</label>
+                        <input type="text" id="fullName" placeholder="أدخل الاسم رباعي" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taxId">الرقم الضريبي</label>
+                        <input type="text" id="taxId" placeholder="مثال: 123-456-789" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="transactionType">نوع المعاملة</label>
+                        <select id="transactionType">
+                            <option value="">اختر النوع...</option>
+                            <option value="commercial">أرباح تجارية</option>
+                            <option value="professional">مهن حرة</option>
+                            <option value="realestate">ثروة عقارية</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">قيمة المعاملة (بالجنيه)</label>
+                        <input type="number" id="amount" placeholder="0.00">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">ملاحظات إضافية</label>
+                        <textarea id="notes" rows="2" placeholder="أي تفاصيل أخرى..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fileUpload">رفع المستندات (لاستخراج البيانات تلقائياً)</label>
+                        <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">يمكنك تحميل <a
+                                href="transaction_template.md" target="_blank">القالب الموحد من هنا</a> وملئه ثم رفعه.
+                        </p>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="fileUpload" hidden>
+                            <label for="fileUpload" class="file-upload-btn">اختر ملفاً...</label>
+                            <span id="fileNameDisplay">لم يتم اختيار ملف</span>
+                        </div>
+                        <button type="button" id="parseFileBtn" class="btn-secondary"
+                            style="margin-top: 10px; display: none;">تفريغ بيانات الملف في النموذج ⚡</button>
+                    </div>
+
+                    <button type="submit" class="btn">تقديم البيانات المكتملة</button>
+                </form>
+            </section>
+
+            <aside class="assistant-section">
+                <h2>أستاذ بيومي (ذكاء اصطناعي)</h2>
+                <div class="assistant-bot">
+                    <div class="bot-header">
+                        <span class="bot-avatar">👨‍💼</span>
+                        <strong>أستاذ بيومي المساعد الضريبي</strong>
+                    </div>
+                    <div class="bot-message" id="assistantMessage">
+                        أهلاً بك. أنا هنا لمساعدتك في استكمال النموذج بشكل صحيح وتجنب الأخطاء.
+                    </div>
+                    <ul class="missing-tags-list" id="missingFieldsList">
+                        <!-- تظهر الحقول الناقصة هنا -->
+                    </ul>
+                    <div class="aml-alert" id="amlAlert">
+                        ⚠️ <strong>تنبيه أمني:</strong> تم العثور على تشابه مع قوائم المحظورين. يرجى مراجعة مصلحة
+                        الضرائب فوراً لاستكمال المعاملة.
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="success-message" id="successScreen">
+            <h2>تم تقديم المعاملة بنجاح!</h2>
+            <p>يتم الآن إنشاء تقرير الالتزام...</p>
+            <br>
+            <button class="btn" onclick="location.reload()">بدء معاملة جديدة</button>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="partnership-text">
+                    <p>شريك التحول الرقمي</p>
+                    <small>Powered by Konecta</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
