@@ -1,7 +1,19 @@
 /* ============================================
-   MOBILE RESPONSIVE STYLES
-   Add this file to your HTML or append to style.css
+   MOBILE RESPONSIVE STYLES - Complete Fix
    ============================================ */
+
+/* Force all containers to respect viewport width */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
 
 /* Tablet and smaller devices */
 @media screen and (max-width: 1024px) {
@@ -18,63 +30,109 @@
     .hero h1 {
         font-size: 2.5rem;
     }
+
+    .glass {
+        padding: 30px !important;
+    }
 }
 
 /* Mobile devices */
 @media screen and (max-width: 768px) {
 
-    /* Navigation - Hide links, keep logo and support button */
+    /* Force everything to 100% width */
+    body,
+    section,
+    .chapter-section,
+    .glass {
+        max-width: 100vw !important;
+        width: 100% !important;
+    }
+
+    /* Navigation - Simplified for mobile */
     .glass-nav {
-        padding: 15px 20px;
+        padding: 12px 15px;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 8px;
+        justify-content: space-between;
     }
 
     .nav-links {
         display: none;
     }
 
+    .logo {
+        font-size: 1.1rem;
+    }
+
     .btn-support {
-        font-size: 0.8rem;
-        padding: 8px 16px;
+        font-size: 0.75rem;
+        padding: 6px 12px;
     }
 
     /* Hero Section */
     .hero {
-        padding: 120px 20px 60px;
+        padding: 100px 15px 40px;
         min-height: auto;
     }
 
-    .hero h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-    }
-
-    .hero p {
-        font-size: 0.95rem;
-    }
-
     .hero-content {
-        flex-direction: column;
+        max-width: 100%;
         text-align: center;
     }
 
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .hero-visual {
+        margin-top: 20px;
+    }
+
     .profile-container {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        display: inline-block;
+        margin: 5px;
     }
 
     /* Chapter Sections */
     .chapter-section {
-        padding: 40px 20px;
+        padding: 30px 15px;
     }
 
-    .chapter-section h2 {
-        font-size: 1.8rem;
+    .chapter-section h2,
+    .chapter-title {
+        font-size: 1.5rem;
     }
 
     .chapter-section h3 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+    }
+
+    .section-badge {
+        font-size: 0.7rem;
+        padding: 5px 12px;
+    }
+
+    .glass {
+        padding: 20px !important;
+        margin: 10px 0 !important;
     }
 
     /* All Grids - Single Column on Mobile */
@@ -83,9 +141,11 @@
     .honor-grid,
     .training-grid,
     .vault-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
+    .contact-grid,
+    .skills-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+        width: 100% !important;
     }
 
     /* Cards */
@@ -93,28 +153,65 @@
     .project-card,
     .honor-card,
     .training-card,
-    .contact-item {
-        padding: 20px;
+    .contact-item,
+    .skill-card,
+    .vault-card {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .service-card h4,
+    .project-card h4 {
+        font-size: 1rem;
     }
 
     /* Timeline */
+    .timeline {
+        padding-left: 15px;
+    }
+
     .timeline-item {
-        padding-left: 20px;
+        padding-left: 15px;
+        padding-bottom: 20px;
     }
 
     .timeline-item::before {
-        left: 0;
+        left: -10px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .timeline-item h4 {
+        font-size: 1rem;
+    }
+
+    .timeline-item p {
+        font-size: 0.85rem;
     }
 
     /* Tech tags */
     .tech-tag {
-        font-size: 0.7rem;
-        padding: 4px 8px;
+        font-size: 0.65rem;
+        padding: 3px 6px;
     }
 
     /* Footer */
     footer {
-        padding: 20px;
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+
+    /* AI Orb - hide on mobile for performance */
+    .ai-orb {
+        display: none;
+    }
+
+    /* Contact icons */
+    .contact-item i {
+        font-size: 1.5rem;
+    }
+
+    .contact-item span {
         font-size: 0.85rem;
     }
 }
@@ -122,28 +219,33 @@
 /* Small mobile devices */
 @media screen and (max-width: 480px) {
     .hero h1 {
-        font-size: 1.6rem;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-    }
-
-    .chapter-section h2 {
         font-size: 1.5rem;
     }
 
+    .hero p {
+        font-size: 0.85rem;
+    }
+
+    .chapter-section h2,
+    .chapter-title {
+        font-size: 1.3rem;
+    }
+
     .profile-container {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     .logo {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    .service-card h4,
-    .project-card h4 {
-        font-size: 1rem;
+    .glass {
+        padding: 15px !important;
+    }
+
+    .glass p {
+        font-size: 0.9rem !important;
+        line-height: 1.6 !important;
     }
 }
