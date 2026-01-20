@@ -11,6 +11,107 @@
     <link rel="stylesheet" href="mobile-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Certification Spotlight Styles injected to bypass CSS encoding issues */
+        .cert-spotlight {
+            padding: 30px 5%;
+            display: flex;
+            justify-content: center;
+            margin-top: -60px;
+            position: relative;
+            z-index: 100;
+        }
+
+        .cert-container {
+            display: flex;
+            gap: 40px;
+            padding: 2.5rem 4rem;
+            border-radius: 30px;
+            background: rgba(10, 15, 30, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 242, 255, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cert-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.4s ease;
+            cursor: default;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+
+        .cert-card i {
+            font-size: 2.5rem;
+            color: var(--primary-neon);
+            filter: drop-shadow(0 0 10px var(--primary-neon));
+        }
+
+        .cert-card h4 {
+            font-size: 0.95rem;
+            margin: 0;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-gold {
+            font-size: 0.7rem;
+            color: var(--gold, #FFD700);
+            text-transform: uppercase;
+            font-weight: 800;
+            display: block;
+            margin-top: 2px;
+            letter-spacing: 1.5px;
+        }
+
+        .badge-blue {
+            font-size: 0.7rem;
+            color: #00A3FF;
+            text-transform: uppercase;
+            font-weight: 800;
+            display: block;
+            margin-top: 2px;
+            letter-spacing: 1.5px;
+        }
+
+        .badge-google {
+            font-size: 0.7rem;
+            color: #34A853;
+            text-transform: uppercase;
+            font-weight: 800;
+            display: block;
+            margin-top: 2px;
+            letter-spacing: 1.5px;
+        }
+
+        @media (max-width: 768px) {
+            .cert-spotlight {
+                margin-top: 20px;
+                padding: 20px;
+            }
+
+            .cert-container {
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .cert-card i {
+                font-size: 1.8rem;
+            }
+
+            .cert-card h4 {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -44,10 +145,37 @@
         </div>
         <div class="hero-visual">
             <div class="profile-container">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGTVamaRYRnlQ/profile-displayphoto-scale_400_400/B4DZlJeqZyJkAk-/0/1757874401338?e=1768435200&v=beta&t=7vSf_QwV2013WXQZGGp6zqo32YfyMQR9h7K0M441IQo"
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGTVamaRYRnlQ/profile-displayphoto-scale_400_400/B4DZlJeqZyJkAk-/0/1757874401338?e=1770249600&v=beta&t=oaGB7hSvUFRuFnFFTN_6FKdNOjGyInuu8M3SaaxzM0M"
                     alt="Ahmed Eltaweel" class="profile-pic">
             </div>
             <div class="ai-orb"></div>
+        </div>
+    </section>
+
+    <!-- Elite Certifications Spotlight -->
+    <section class="cert-spotlight reveal-up">
+        <div class="glass cert-container">
+            <div class="cert-card">
+                <i class="fa-brands fa-aws"></i>
+                <div>
+                    <h4>AWS Solutions Architect</h4>
+                    <span class="badge-gold">Professional</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <i class="fa-brands fa-aws"></i>
+                <div>
+                    <h4>AWS Machine Learning</h4>
+                    <span class="badge-blue">Associate</span>
+                </div>
+            </div>
+            <div class="cert-card">
+                <i class="fa-brands fa-google"></i>
+                <div>
+                    <h4>Professional ML Engineer</h4>
+                    <span class="badge-google">Professional</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -100,6 +228,10 @@
                     <span class="mini-cert">CrewAI</span>
                     <span class="mini-cert">Vertex AI</span>
                     <span class="mini-cert">Gemini API</span>
+                    <span class="mini-cert">Professional ML Engineer</span>
+                    <span class="mini-cert">AI/ML Pre-sales Expert</span>
+                    <span class="mini-cert">Build AI/ML Models (Google)</span>
+                    <span class="mini-cert">Vertex AI Skill Badge</span>
                     <span class="mini-cert">RAG Architecture</span>
                     <span class="mini-cert">LangChain</span>
                     <span class="mini-cert">Python</span>
@@ -134,7 +266,11 @@
                 <div class="certs-mini-grid">
                     <span class="mini-cert">Power BI</span>
                     <span class="mini-cert">BigQuery ML</span>
+                    <span class="mini-cert">Google Cloud Data Analytics</span>
+                    <span class="mini-cert">Azure Data Engineer (DEPI)</span>
                     <span class="mini-cert">Azure Data</span>
+                    <span class="mini-cert">Understanding Data Engineering</span>
+                    <span class="mini-cert">Predictive Modelling (ESOA)</span>
                     <span class="mini-cert">SPSS Modeler</span>
                     <span class="mini-cert">Tableau</span>
                     <span class="mini-cert">Python & R</span>
@@ -257,6 +393,8 @@
                     <span class="mini-cert">Power BI</span>
                     <span class="mini-cert">Actuarial Modeling</span>
                     <span class="mini-cert">Risk Management</span>
+                    <span class="mini-cert">Certified Innovation Leader</span>
+                    <span class="mini-cert">McKinsey Forward</span>
                     <span class="mini-cert">Python for Data</span>
                     <span class="mini-cert">Deep Learning</span>
                 </div>
