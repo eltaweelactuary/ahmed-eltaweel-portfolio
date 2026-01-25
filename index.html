@@ -12,121 +12,159 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        /* CSS Variables for Brand Colors */
+        :root {
+            --aws-orange: #FF9900;
+            --google-blue: #4285F4;
+            --google-green: #34A853;
+            --google-yellow: #FBBC05;
+            --google-red: #EA4335;
+        }
+
         /* FIX: Prevent content from skewing to the left */
         .chapter-section {
             padding-left: 10% !important;
             padding-right: 10% !important;
         }
 
-        /* Certification Spotlight Styles - Strong Advertisement Look */
+        /* Certification Spotlight Styles - HIGH IMPACT AD */
         .cert-spotlight {
-            padding: 40px 2%;
+            padding: 80px 2%;
             display: flex;
             justify-content: center;
-            margin-top: -60px;
+            margin-top: -100px;
             position: relative;
-            z-index: 100;
+            z-index: 1000;
         }
 
         .cert-container {
             display: flex;
-            gap: 50px;
-            padding: 2.5rem 4rem;
-            border-radius: 40px;
-            background: rgba(10, 15, 30, 0.7);
-            backdrop-filter: blur(25px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+            gap: 40px;
+            padding: 4rem 6rem;
+            border-radius: 50px;
+            background: rgba(10, 15, 30, 0.85);
+            backdrop-filter: blur(40px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.8),
+                inset 0 0 40px rgba(0, 242, 255, 0.05);
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            width: 90%;
-            max-width: 1400px;
+            width: 92%;
+            max-width: 1500px;
         }
 
         .cert-card {
             display: flex;
+            flex-direction: column;
             align-items: center;
+            text-align: center;
             gap: 20px;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
             cursor: default;
-            padding: 15px 25px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            min-width: 280px;
         }
 
         .cert-card:hover {
-            transform: translateY(-10px) scale(1.05);
-            background: rgba(255, 255, 255, 0.08);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transform: translateY(-20px) scale(1.05);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
         }
 
         .cert-card i {
-            font-size: 3rem;
+            font-size: 4.5rem;
+            margin-bottom: 10px;
         }
 
-        /* Original Brand Colors for High Impact */
+        /* Brand-Specific Gradients & Glows */
         .fa-aws {
-            color: #FF9900;
-            /* AWS Orange */
-            filter: drop-shadow(0 0 15px rgba(255, 153, 0, 0.4));
+            color: var(--aws-orange);
+            filter: drop-shadow(0 0 25px rgba(255, 153, 0, 0.6));
         }
 
-        .google-logo-gradient {
-            background: -webkit-linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335);
+        .google-brand-icon {
+            background: linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 15px rgba(66, 133, 244, 0.3));
+            filter: drop-shadow(0 0 20px rgba(66, 133, 244, 0.4));
         }
 
         .cert-card h4 {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             margin: 0;
             color: #fff;
-            font-weight: 700;
+            font-weight: 800;
             letter-spacing: 0.5px;
         }
 
-        .badge-gold {
-            font-size: 0.75rem;
-            color: #FFD700;
+        .badge-premium {
+            font-size: 0.85rem;
             text-transform: uppercase;
-            font-weight: 800;
-            display: block;
-            margin-top: 4px;
-            letter-spacing: 2px;
+            font-weight: 900;
+            display: inline-block;
+            margin-top: 10px;
+            letter-spacing: 3px;
+            padding: 5px 15px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .badge-gold {
+            color: #FFD700;
+            border: 1px solid rgba(255, 215, 0, 0.3);
         }
 
         .badge-blue {
-            font-size: 0.75rem;
             color: #00A3FF;
-            text-transform: uppercase;
-            font-weight: 800;
-            display: block;
-            margin-top: 4px;
-            letter-spacing: 2px;
+            border: 1px solid rgba(0, 163, 255, 0.3);
         }
 
-        .badge-google {
-            font-size: 0.75rem;
+        .badge-google-pro {
             color: #34A853;
-            text-transform: uppercase;
-            font-weight: 800;
-            display: block;
-            margin-top: 4px;
-            letter-spacing: 2px;
+            border: 1px solid rgba(52, 168, 83, 0.3);
         }
 
-        @media (max-width: 900px) {
+        .badge-google-tech {
+            color: #4285F4;
+            border: 1px solid rgba(66, 133, 244, 0.3);
+        }
+
+        @media (max-width: 1024px) {
             .cert-container {
-                gap: 20px;
-                padding: 20px;
+                padding: 3rem;
+            }
+
+            .cert-card {
+                min-width: 250px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cert-spotlight {
+                margin-top: 20px;
+                padding: 10px;
+            }
+
+            .cert-container {
+                gap: 15px;
+                padding: 1.5rem;
                 width: 95%;
             }
 
             .cert-card {
                 width: 100%;
-                justify-content: flex-start;
+                min-width: unset;
+                padding: 20px;
+            }
+
+            .cert-card i {
+                font-size: 3.5rem;
             }
         }
     </style>
@@ -141,28 +179,26 @@
                 style="color: var(--gold);">.ai</span></a>
         <ul class="nav-links">
             <li><a href="#agentic-ai">Agentic AI</a></li>
-            <li><a href="#code">The Code</a></li>
-            <li><a href="#academic">Academic</a></li>
+            <li><a href="#code">Philosophy</a></li>
+            <li><a href="#academic">Research</a></li>
             <li><a href="#training">Training</a></li>
-            <li><a href="#vault">Projects</a></li>
+            <li><a href="#vault">Vault</a></li>
         </ul>
         <a href="https://www.paypal.com/paypalme/atomiceltaweel" class="btn-support" target="_blank">Support Me</a>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-content">
             <h2>AI Solution Architect</h2>
             <h1>Ahmed <span class="gradient-text">Eltaweel</span></h1>
             <p>Architecting high-performance <strong>Agentic AI</strong> and <strong>Actuarial Risk
-                    Architecture</strong> for the Middle East and international markets. My passion is <strong>touching
-                    the lives of millions</strong> through solutions designed specifically for them — merging deep
-                mathematical rigor with industrial-grade AI orchestration.</p>
-            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    Architecture</strong>. My passion is <strong>touching the lives of millions</strong> through
+                industrial-grade AI orchestration.</p>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 30px;">
                 <a href="Ahmed_Eltaweel_ATS_CV.pdf" target="_blank" class="btn-primary"
-                    style="background: var(--gold); color: #000;"><i class="fas fa-file-pdf"></i> Download CV</a>
-                <a href="#agentic-ai" class="btn-primary">Explore My Work</a>
-                <a href="#journey" class="btn-secondary">View Journey</a>
+                    style="background: var(--gold); color: #000; border: none; padding: 15px 35px;"><i
+                        class="fas fa-file-pdf"></i> Download CV</a>
+                <a href="#agentic-ai" class="btn-primary">Explore Work</a>
             </div>
         </div>
         <div class="hero-visual">
@@ -174,85 +210,50 @@
         </div>
     </section>
 
-    <!-- Elite Certifications Spotlight - High Impact Ad -->
-    <section class="cert-spotlight reveal-up">
+    <!-- HIGH IMPACT CERTIFICATION AD SECTION -->
+    <section class="cert-spotlight">
         <div class="glass cert-container">
             <div class="cert-card">
                 <i class="fa-brands fa-aws"></i>
-                <div>
-                    <h4>AWS Solutions Architect</h4>
-                    <span class="badge-gold">Professional</span>
-                </div>
+                <h4>AWS Solutions Architect</h4>
+                <span class="badge-premium badge-gold">Professional</span>
             </div>
             <div class="cert-card">
                 <i class="fa-brands fa-aws"></i>
-                <div>
-                    <h4>AWS Machine Learning</h4>
-                    <span class="badge-blue">Specialty</span>
-                </div>
+                <h4>AWS Machine Learning</h4>
+                <span class="badge-premium badge-blue">Specialty</span>
             </div>
             <div class="cert-card">
-                <i class="fa-brands fa-google google-logo-gradient"></i>
-                <div>
-                    <h4>Professional ML Engineer</h4>
-                    <span class="badge-google">Google Professional</span>
-                </div>
+                <i class="fa-brands fa-google google-brand-icon"></i>
+                <h4>Professional ML Engineer</h4>
+                <span class="badge-premium badge-google-pro">Google Professional</span>
             </div>
             <div class="cert-card">
-                <i class="fa-brands fa-google google-logo-gradient"></i>
-                <div>
-                    <h4>AI/ML Pre-sales Expert</h4>
-                    <span class="badge-google">Google Technical</span>
-                </div>
+                <i class="fa-brands fa-google google-brand-icon"></i>
+                <h4>AI/ML Pre-sales Expert</h4>
+                <span class="badge-premium badge-google-tech">Google Technical</span>
             </div>
         </div>
     </section>
 
-    <!-- Chapter 00: Philosophy -->
-    <section id="code" class="chapter-section reveal-up"
-        style="text-align: center; background: linear-gradient(180deg, rgba(112, 0, 255, 0.03), transparent);">
-        <span class="section-badge">The Samurai's Code</span>
-        <h2 class="chapter-title">My <span class="gradient-text">Philosophy</span></h2>
-        <div class="glass reveal-scale" style="max-width: 900px; margin: 0 auto; padding: 50px;">
-            <p style="font-size: 1.2rem; color: var(--text-dim); line-height: 1.9;">
-                <strong style="color: var(--primary-neon);">AI is not merely about calling APIs.</strong> It is about
-                the deep understanding of <strong>algorithms</strong>, the rigorous analysis of <strong>data</strong>,
-                and the art of making <strong>informed decisions</strong>. My professional journey has been a deliberate
-                path: from building <strong>Decision Support Systems</strong> rooted in data, to studying the theories
-                of <strong>Power & Influence</strong>, and mastering <strong>Delphi Methods</strong> for structured
-                group decision-making. I have drawn from <strong>Management Science</strong> and <strong>Organizational
-                    Psychology</strong> to understand how humans decide, before layering on <strong>AI</strong> — not as
-                a tool for convenience, but as an academic discipline.
-            </p>
-        </div>
-    </section>
-
-    <!-- Chapter 01: Agentic AI -->
     <section id="agentic-ai" class="chapter-section reveal-left">
-        <span class="section-badge">Chapter 01</span>
         <h2 class="chapter-title">Agentic <span class="gradient-text">AI Solutions</span></h2>
         <div class="chapter-content">
             <div class="chapter-left">
-                <h3>Autonomous Systems</h3>
-                <p>Building autonomous business units with <strong>CrewAI</strong>. Handling <strong>50k+ monthly
-                        queries</strong> with 95% accuracy for international markets.</p>
+                <h3>Autonomous Orchestration</h3>
+                <p>Handling <strong>50k+ monthly queries</strong> with 95% accuracy for international markets.</p>
                 <div class="evidence-list">
-                    <div class="evidence-item glass reveal-explode reveal-delay-1">
+                    <div class="evidence-item glass">
                         <h4>Electric Utility AI</h4>
-                        <p>Autonomous logistics agents built on CrewAI for smart utility management.</p>
-                    </div>
-                    <div class="evidence-item glass reveal-explode reveal-delay-2">
-                        <h4>Enterprise RAG</h4>
-                        <p>Secure Retrieval-Augmented Generation pipelines using Vertex AI and Gemini.</p>
+                        <p>Autonomous logistics agents built on CrewAI.</p>
                     </div>
                 </div>
             </div>
-            <div class="chapter-right glass reveal-right">
+            <div class="chapter-right glass">
                 <h3>Core Stack</h3>
                 <div class="certs-mini-grid">
                     <span class="mini-cert">CrewAI</span>
                     <span class="mini-cert">Vertex AI</span>
-                    <span class="mini-cert">Gemini Pro</span>
                     <span class="mini-cert">RAG Architecture</span>
                     <span class="mini-cert">Python</span>
                 </div>
@@ -260,179 +261,42 @@
         </div>
     </section>
 
-    <!-- Chapter 02: Data Analytics -->
-    <section id="data-analytics" class="chapter-section odd reveal-right">
-        <span class="section-badge">Chapter 02</span>
-        <h2 class="chapter-title">Data <span class="gradient-text">Analytics</span></h2>
-        <div class="chapter-content reverse">
-            <div class="chapter-left">
-                <h3>Precision Insights</h3>
-                <p>Monitoring <strong>10M+ annual records</strong> for national stability. Validated <strong>€2M+
-                        savings</strong> via Power BI & strategic automation.</p>
-                <div class="evidence-list">
-                    <div class="evidence-item glass reveal-explode reveal-delay-1">
-                        <h4>National BI Dashboard</h4>
-                        <p>Power BI ecosystem for monitoring the national life insurance sector.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="chapter-right glass reveal-left">
-                <h3>Tools</h3>
-                <div class="certs-mini-grid">
-                    <span class="mini-cert">Power BI</span>
-                    <span class="mini-cert">BigQuery ML</span>
-                    <span class="mini-cert">Azure Data Engineer</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chapter 03: Risk & Actuarial -->
-    <section id="risk-actuarial" class="chapter-section reveal-left">
-        <span class="section-badge">Chapter 03</span>
-        <h2 class="chapter-title">Risk & <span class="gradient-text">Actuarial</span></h2>
-        <div class="chapter-content">
-            <div class="chapter-left">
-                <h3>Enterprise Risk</h3>
-                <p>Mitigated <strong>50+ operational risks</strong> via ISO 31000. Achieved <strong>15% loss ratio
-                        improvement</strong> with Python-driven analytics.</p>
-                <div class="evidence-list">
-                    <div class="evidence-item glass reveal-explode reveal-delay-1">
-                        <h4>Life Pricing Models</h4>
-                        <p>Actuarial-grade forecasting and competitive pricing for 15+ entities.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="chapter-right glass reveal-right">
-                <h3>Skills</h3>
-                <div class="certs-mini-grid">
-                    <span class="mini-cert">ISO 31000</span>
-                    <span class="mini-cert">Survival Analysis</span>
-                    <span class="mini-cert">Risk Registry</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chapter 04: Academic Research -->
-    <section id="academic" class="chapter-section reveal-right">
-        <span class="section-badge">Chapter 04</span>
-        <h2 class="chapter-title">Academic <span class="gradient-text">Research</span></h2>
-        <div class="chapter-content">
-            <div class="chapter-left">
-                <h3>Scholarly Path</h3>
-                <p>Integrated biological metrics (GlycanAge) into survival analysis. Master's specialized in AI-driven
-                    <strong>Longevity Risk</strong> assessment.</p>
-                <div class="evidence-list">
-                    <div class="evidence-item glass reveal-explode reveal-delay-1">
-                        <h4>Master's Thesis</h4>
-                        <p>Deep Learning survival analysis (DeepSurv) for biological aging modeling.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="chapter-right glass reveal-left">
-                <h3>Research Focus</h3>
-                <div class="certs-mini-grid">
-                    <span class="mini-cert">DeepSurv</span>
-                    <span class="mini-cert">Longevity Risk</span>
-                    <span class="mini-cert">Bio-Metrics</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chapter 05: Training Services -->
-    <section id="training" class="chapter-section odd reveal-left">
-        <span class="section-badge">Chapter 05</span>
-        <h2 class="chapter-title">Training <span class="gradient-text">Services</span></h2>
-        <div class="chapter-content">
-            <div class="chapter-left">
-                <h3>Corporate Mentorship</h3>
-                <p>Global AI/ML leader and <strong>AWS Community Builder</strong>. Providing workshops on RAG systems
-                    and Agentic AI for enterprise teams.</p>
-                <div class="evidence-list">
-                    <div class="evidence-item glass reveal-explode reveal-delay-1">
-                        <h4>Corporate Workshops</h4>
-                        <p>Tailored training on CrewAI, Vertex AI, and Modern Data Engineering.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="chapter-right glass reveal-right">
-                <h3>Programs</h3>
-                <div class="certs-mini-grid">
-                    <span class="mini-cert">AI Strategy</span>
-                    <span class="mini-cert">Mentorship</span>
-                    <span class="mini-cert">AWS Community</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chapter 06: The Journey -->
-    <section id="journey" class="chapter-section reveal-up">
-        <span class="section-badge">Chapter 06</span>
+    <section id="journey" class="chapter-section odd">
         <h2 class="chapter-title">Professional <span class="gradient-text">Journey</span></h2>
         <div class="timeline">
-            <div class="timeline-item reveal-up">
+            <div class="timeline-item">
                 <div class="time">2024 - Present</div>
                 <div class="content">
-                    <h3>AI Solution Architect</h3>
+                    <h3>AI Product Solution Architect</h3>
                     <h4>Konecta Global</h4>
-                    <p>Driving GenAI strategy and delivering architectural roadmaps for EMEA clients.</p>
+                    <p>Validated <strong>€2M+ savings</strong> via strategic AI automation.</p>
                 </div>
             </div>
-            <div class="timeline-item reveal-up">
+            <div class="timeline-item">
                 <div class="time">2021 - 2024</div>
                 <div class="content">
-                    <h3>Senior Data Specialist</h3>
+                    <h3>Senior Actuarial Specialist</h3>
                     <h4>Financial Regulatory Authority (FRA)</h4>
-                    <p>Digitalized national Life Insurance monitoring using BI and automated pipelines.</p>
+                    <p>Monitoring <strong>10M+ annual records</strong> for Life Insurance stability.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Vault -->
-    <section id="vault" class="chapter-section odd reveal-up">
-        <span class="section-badge">The Vault</span>
-        <h2 class="chapter-title">Featured <span class="gradient-text">Projects</span></h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
-            <div class="glass reveal-explode reveal-delay-1">
-                <h4 style="color: var(--primary-neon);">BioAge Research</h4>
-                <p>Biological age integration into life insurance pricing.</p>
-                <a href="#contact" class="btn-mini">Request Access</a>
-            </div>
-            <div class="glass reveal-explode reveal-delay-2">
-                <h4 style="color: var(--primary-neon);">Wasel Green Path</h4>
-                <p>AI-driven sign language and accessibility suite.</p>
-                <a href="#contact" class="btn-mini">Request Access</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="chapter-section reveal-up">
-        <span class="section-badge">Connect</span>
+    <section id="contact" class="chapter-section">
         <h2 class="chapter-title">Secure <span class="gradient-text">Connection</span></h2>
-        <div class="glass" style="max-width: 700px; margin: 0 auto; text-align: center;">
-            <div class="direct-links" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <div class="glass" style="max-width: 800px; margin: 0 auto; text-align: center; padding: 50px;">
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://wa.me/201111907502" class="btn-whatsapp" target="_blank"><i
                         class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                <a href="https://t.me/eltaweelactuary" class="btn-telegram" target="_blank"><i
-                        class="fa-brands fa-telegram"></i> Telegram</a>
                 <a href="https://linkedin.com/in/ahmed-eltaweel-5b53a38b" class="btn-linkedin" target="_blank"><i
                         class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            </div>
-            <div class="support-box" style="margin-top: 30px;">
-                <p style="color: var(--text-dim);">Fueling the future of Agentic AI.</p>
-                <a href="https://www.paypal.com/paypalme/atomiceltaweel" class="btn-paypal" target="_blank">Support via
-                    PayPal</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Ahmed Eltaweel. High-Impact Data & AI Architecture.</p>
+        <p>&copy; 2024 Ahmed Eltaweel. High-Impact Delivery.</p>
     </footer>
 
     <script src="script.js"></script>
