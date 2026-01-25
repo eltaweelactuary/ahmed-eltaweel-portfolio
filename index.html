@@ -88,21 +88,21 @@
                 <i class="fa-brands fa-aws"></i>
                 <div>
                     <h4>AWS Machine Learning</h4>
-                    <span class="badge-blue">Associate</span>
+                    <span class="badge-blue">Specialty</span>
                 </div>
             </div>
             <div class="cert-card">
                 <i class="fa-brands fa-google"></i>
                 <div>
                     <h4>Professional ML Engineer</h4>
-                    <span class="badge-google">Professional</span>
+                    <span class="badge-google">Google Professional</span>
                 </div>
             </div>
             <div class="cert-card">
-                <i class="fas fa-microchip" style="color: #4285F4;"></i>
+                <i class="fa-brands fa-google"></i>
                 <div>
                     <h4>AI/ML Pre-sales Expert</h4>
-                    <span class="badge-blue">Google Technical</span>
+                    <span class="badge-google">Google Technical</span>
                 </div>
             </div>
         </div>
@@ -360,95 +360,140 @@
             </div>
         </div>
 
-        .cert-container {
-        display: flex;
-        gap: 40px;
-        padding: 2.5rem 4rem;
-        border-radius: 30px;
-        background: rgba(10, 15, 30, 0.4);
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(0, 242, 255, 0.3);
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        }
+        <style>
+            /* FIX: Prevent content from skewing to the left */
+            .chapter-section {
+                padding-left: 10% !important;
+                padding-right: 10% !important;
+            }
 
-        .cert-card {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        transition: all 0.4s ease;
-        cursor: default;
-        }
+            /* Certification Spotlight Styles - Strong Advertisement Look */
+            .cert-spotlight {
+                padding: 40px 2%;
+                /* Wider padding */
+                display: flex;
+                justify-content: center;
+                margin-top: -60px;
+                position: relative;
+                z-index: 100;
+            }
 
-        .cert-card:hover {
-        transform: translateY(-8px) scale(1.02);
-        }
+            .cert-container {
+                display: flex;
+                gap: 50px;
+                /* Increased gap */
+                padding: 3rem 5rem;
+                /* Larger padding */
+                border-radius: 40px;
+                /* Rounder */
+                background: rgba(10, 15, 30, 0.6);
+                /* Slightly darker for contrast */
+                backdrop-filter: blur(25px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+                /* Deeper shadow */
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                /* Take up more width */
+                max-width: 1400px;
+            }
 
-        .cert-card i {
-        font-size: 2.5rem;
-        color: var(--primary-neon);
-        filter: drop-shadow(0 0 10px var(--primary-neon));
-        }
+            .cert-card {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                cursor: default;
+                padding: 15px 25px;
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.03);
+                /* Subtle card bg */
+            }
 
-        .cert-card h4 {
-        font-size: 0.95rem;
-        margin: 0;
-        color: #fff;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        }
+            .cert-card:hover {
+                transform: translateY(-10px) scale(1.05);
+                background: rgba(255, 255, 255, 0.08);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            }
 
-        .badge-gold {
-        font-size: 0.7rem;
-        color: var(--gold, #FFD700);
-        text-transform: uppercase;
-        font-weight: 800;
-        display: block;
-        margin-top: 2px;
-        letter-spacing: 1.5px;
-        }
+            .cert-card i {
+                font-size: 3rem;
+                /* Larger Icons */
+            }
 
-        .badge-blue {
-        font-size: 0.7rem;
-        color: #00A3FF;
-        text-transform: uppercase;
-        font-weight: 800;
-        display: block;
-        margin-top: 2px;
-        letter-spacing: 1.5px;
-        }
+            /* Original Brand Colors */
+            .fa-aws {
+                color: #FF9900;
+                /* AWS Orange */
+                filter: drop-shadow(0 0 15px rgba(255, 153, 0, 0.4));
+            }
 
-        .badge-google {
-        font-size: 0.7rem;
-        color: #34A853;
-        text-transform: uppercase;
-        font-weight: 800;
-        display: block;
-        margin-top: 2px;
-        letter-spacing: 1.5px;
-        }
+            .fa-google {
+                background: -webkit-linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 0 15px rgba(66, 133, 244, 0.4));
+            }
 
-        @media (max-width: 768px) {
-        .cert-spotlight {
-        margin-top: 20px;
-        padding: 20px;
-        }
+            .cert-card h4 {
+                font-size: 1.1rem;
+                /* Larger Text */
+                margin: 0;
+                color: #fff;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
 
-        .cert-container {
-        gap: 20px;
-        padding: 20px;
-        }
+            .badge-gold {
+                font-size: 0.75rem;
+                color: #FFD700;
+                text-transform: uppercase;
+                font-weight: 800;
+                display: block;
+                margin-top: 4px;
+                letter-spacing: 2px;
+            }
 
-        .cert-card i {
-        font-size: 1.8rem;
-        }
+            .badge-blue {
+                font-size: 0.75rem;
+                color: #00A3FF;
+                text-transform: uppercase;
+                font-weight: 800;
+                display: block;
+                margin-top: 4px;
+                letter-spacing: 2px;
+            }
 
-        .cert-card h4 {
-        font-size: 0.8rem;
-        }
-        }
+            .badge-google {
+                font-size: 0.75rem;
+                color: #34A853;
+                /* Google Green */
+                text-transform: uppercase;
+                font-weight: 800;
+                display: block;
+                margin-top: 4px;
+                letter-spacing: 2px;
+            }
+
+            @media (max-width: 768px) {
+                .cert-spotlight {
+                    margin-top: 20px;
+                    padding: 10px;
+                }
+
+                .cert-container {
+                    gap: 20px;
+                    padding: 20px;
+                    width: 95%;
+                }
+
+                .cert-card {
+                    width: 100%;
+                    /* Stack on mobile */
+                }
+            }
         </style>
         </head>
 
