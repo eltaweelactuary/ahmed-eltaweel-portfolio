@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="mobile-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9DMZJ7XGT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-L9DMZJ7XGT');
+    </script>
     <style>
         /* CSS Variables for Brand Colors */
         :root {
@@ -119,6 +128,33 @@
 
         .badge-google-tech {
             color: #4285F4;
+        }
+
+        .mini-tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .mini-tags span {
+            font-size: 0.7rem;
+            padding: 5px 12px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .mini-tags span:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--gold);
+            color: #fff;
+            transform: translateY(-2px);
         }
 
         @media (max-width: 900px) {
@@ -241,11 +277,12 @@
                 <h3>Core Stack</h3>
                 <div class="certs-mini-grid">
                     <span class="mini-cert">CrewAI</span>
+                    <span class="mini-cert">LangGraph</span>
                     <span class="mini-cert">Vertex AI</span>
-                    <span class="mini-cert">Gemini Pro</span>
-                    <span class="mini-cert">RAG Architecture</span>
-                    <span class="mini-cert">Azure Data Engineer (DEPI)</span>
-                    <span class="mini-cert">Python</span>
+                    <span class="mini-cert">Gemini Pro 1.5</span>
+                    <span class="mini-cert">Multi-Agent RAG</span>
+                    <span class="mini-cert">Azure Data Engineer</span>
+                    <span class="mini-cert">Python (FastAPI)</span>
                 </div>
             </div>
         </div>
@@ -270,10 +307,12 @@
             <div class="chapter-right glass">
                 <h3>Tools</h3>
                 <div class="certs-mini-grid">
-                    <span class="mini-cert">Power BI</span>
+                    <span class="mini-cert">Power BI (Advanced DAX)</span>
                     <span class="mini-cert">BigQuery ML</span>
-                    <span class="mini-cert">Google Cloud Data Analytics Professional</span>
+                    <span class="mini-cert">Streamlit</span>
+                    <span class="mini-cert">XGBoost / CatBoost</span>
                     <span class="mini-cert">SQL & R</span>
+                    <span class="mini-cert">Google Data Analytics Pro</span>
                 </div>
             </div>
         </div>
@@ -298,10 +337,11 @@
             <div class="chapter-right glass">
                 <h3>Skills</h3>
                 <div class="certs-mini-grid">
-                    <span class="mini-cert">ISO 31000</span>
+                    <span class="mini-cert">IFRS 17 Reporting</span>
+                    <span class="mini-cert">Custom Reserving Tools</span>
+                    <span class="mini-cert">ISO 31000 (ERM)</span>
                     <span class="mini-cert">Survival Analysis</span>
-                    <span class="mini-cert">Risk Registry</span>
-                    <span class="mini-cert">Pricing Models</span>
+                    <span class="mini-cert">Ensemble Pricing Models</span>
                 </div>
             </div>
         </div>
@@ -327,9 +367,10 @@
             <div class="chapter-right glass">
                 <h3>Research Focus</h3>
                 <div class="certs-mini-grid">
-                    <span class="mini-cert">DeepSurv</span>
+                    <span class="mini-cert">DeepSurv (Deep Learning)</span>
                     <span class="mini-cert">Longevity Risk</span>
-                    <span class="mini-cert">Survival Analysis</span>
+                    <span class="mini-cert">Wearable Telemetry</span>
+                    <span class="mini-cert">GlycanAge Integration</span>
                     <span class="mini-cert">Bio-Metrics</span>
                 </div>
             </div>
@@ -404,36 +445,30 @@
     <section id="vault" class="chapter-section reveal-up">
         <span class="section-badge">The Vault</span>
         <h2 class="chapter-title">Featured <span class="gradient-text">Projects</span></h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
             <div class="glass reveal-explode">
-                <h4 style="color: var(--primary-neon);">Telegram Health AI</h4>
-                <p style="font-size: 0.9rem;">Intelligent agent handling 5k+ interactions/month.</p>
-                <a href="#contact" class="btn-mini">Request Access</a>
+                <h4 style="color: var(--gold);">Actuarial Pricing Orchestrator</h4>
+                <p style="font-size: 0.9rem;">Revolutionary AI platform using an <strong>Ensemble (XGBoost, LightGBM,
+                        CatBoost)</strong> to automate E2E insurance pricing with full FRA compliance.</p>
+                <div class="mini-tags"><span>Streamlit</span> <span>Python</span> <span>ML Ensemble</span></div>
             </div>
             <div class="glass reveal-explode">
-                <h4 style="color: var(--primary-neon);">Electric Utility AI</h4>
-                <p style="font-size: 0.9rem;">Autonomous logistics agents built on CrewAI.</p>
-                <a href="#contact" class="btn-mini">Request Access</a>
+                <h4 style="color: var(--primary-neon);">National BI Ecosystem (FRA)</h4>
+                <p style="font-size: 0.9rem;">National-level platform monitoring <strong>10M+ annual records</strong>
+                    for Egypt\'s life insurance sector, validating €2M+ in savings.</p>
+                <div class="mini-tags"><span>Power BI</span> <span>DAX</span> <span>Regulatory</span></div>
             </div>
             <div class="glass reveal-explode">
-                <h4 style="color: var(--primary-neon);">Smart DMS RAG</h4>
-                <p style="font-size: 0.9rem;">Document indexing & intelligent retrieval (<30s).< /p>
-                        <a href="#contact" class="btn-mini">Request Access</a>
+                <h4 style="color: var(--primary-neon);">Proprietary Reserving Tools</h4>
+                <p style="font-size: 0.9rem;">Custom-engineered Python/VBA frameworks for actuarial reserving,
+                    outperforming commercial OOTB solutions in market-specific flexibility.</p>
+                <div class="mini-tags"><span>Python</span> <span>VBA</span> <span>Reserving</span></div>
             </div>
             <div class="glass reveal-explode">
-                <h4 style="color: var(--primary-neon);">National Tax Portal</h4>
-                <p style="font-size: 0.9rem;">Automating compliance for 100k+ daily transactions.</p>
-                <a href="#contact" class="btn-mini">Request Access</a>
-            </div>
-            <div class="glass reveal-explode">
-                <h4 style="color: var(--primary-neon);">AI Newsletter Crew</h4>
-                <p style="font-size: 0.9rem;">Automated production for 5,000+ subscribers.</p>
-                <a href="#contact" class="btn-mini">Request Access</a>
-            </div>
-            <div class="glass reveal-explode">
-                <h4 style="color: var(--primary-neon);">BioAge Research</h4>
-                <p style="font-size: 0.9rem;">Deep Learning survival analysis (Thesis).</p>
-                <a href="#contact" class="btn-mini">Request Access</a>
+                <h4 style="color: var(--primary-neon);">IFRS 17 Transition Framework</h4>
+                <p style="font-size: 0.9rem;">Regulatory-grade assessment models for 15+ entities, ensuring seamless
+                    alignment with new international accounting standards.</p>
+                <div class="mini-tags"><span>IFRS 17</span> <span>Compliance</span> <span>FRA</span></div>
             </div>
             <div class="glass reveal-explode">
                 <h4 style="color: var(--primary-neon);">Wasel v4 Pro — SLT</h4>
@@ -441,6 +476,12 @@
                     97%+ accuracy. Deployed on GCP Cloud Run.</p>
                 <a href="https://github.com/eltaweelactuary/wasel_v4_pro" class="btn-mini" target="_blank">View on
                     GitHub</a>
+            </div>
+            <div class="glass reveal-explode">
+                <h4 style="color: var(--primary-neon);">Smart DMS RAG</h4>
+                <p style="font-size: 0.9rem;">Document indexing & intelligent retrieval (<30s) built for large-scale
+                        enterprise knowledge management.</p>
+                        <div class="mini-tags"><span>Vertex AI</span> <span>RAG</span> <span>Vector DB</span></div>
             </div>
         </div>
     </section>
