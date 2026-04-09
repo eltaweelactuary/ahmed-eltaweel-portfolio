@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توافق - منصة التوفيق بين المتقدمين للزواج</title>
+    <meta name="description" content="منصة توافق تساعد الشباب والشابات في العثور على شريك الحياة المناسب بخصوصية تامة ومعايير دقيقة.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-11RWJ9C9B8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-11RWJ9C9B8');
+    </script>
+    
+    <!-- Google Analytics Integration -->
+    <script src="analytics.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="توافق">
+                <span>توافق</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#how-it-works">كيف نعمل</a></li>
+                <li><a href="#profiles">المتقدمين</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-primary open-register-btn">سجل الآن</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title animate-reveal">ابحث عن <span>نصفك الآخر</span> بكل ثقة وخصوصية</h1>
+            <p class="hero-subtitle animate-reveal-delayed">منصة توافق هي وجهتك الموثوقة للتوفيق بين الشباب والشابات بهدف الزواج الشرعي، نجمع بين التكنولوجيا الحديثة والقيم الأصيلة.</p>
+            <div class="hero-cta animate-reveal-delayed-2">
+                <button class="btn btn-primary btn-large open-register-btn">ابدأ رحلتك اليوم</button>
+                <button class="btn btn-glass btn-large open-register-btn">اكتشف المميزات و التقديم</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">مشترك نشط</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1200+</span>
+                    <span class="stat-label">حالة توفيق</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">خصوصية تامة</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="how-it-works" class="section">
+        <div class="container text-center">
+            <h2 class="section-title">كيف تبدأ رحلتك في <span>توافق</span>؟</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+                    <h3>أنشئ حسابك</h3>
+                    <p>قم بإنشاء ملفك الشخصي بكل ثقة مع الحفاظ على كامل خصوصيتك وبياناتك.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <h3>حدد معاييرك</h3>
+                    <p>اختر الخصائص التي تبحث عنها في شريك حياتك القادم بكل دقة.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon"><i class="fas fa-heart"></i></div>
+                    <h3>التوفيق والتعارف</h3>
+                    <p>يقوم نظامنا الذكي باقتراح الشخصيات المتوافقة معك تماماً لتبدأ المحادثة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profiles" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">نماذج من <span>المتقدمين</span></h2>
+                <button class="btn btn-outline open-register-btn">عرض الكل</button>
+            </div>
+            <div class="profiles-grid" id="featuredProfiles">
+                <!-- Profiles will be injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+        <div class="container text-center">
+            <div class="glass-card cta-content">
+                <h2>هل أنت مستعد للخطوة التالية؟</h2>
+                <p>انضم إلى آلاف الباحثين عن الاستقرار والحياة الزوجية السعيدة.</p>
+                <button class="btn btn-primary btn-large open-register-btn">سجل الآن مجاناً</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo">
+                    <span>توافق</span>
+                </div>
+                <p>منصة توافق هي منصة رائدة في التوفيق بين الشباب والشابات بهدف الزواج، نلتزم بأعلى معايير الخصوصية والأمان.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>روابط هامة</h3>
+                <ul>
+                    <li><a href="#">عن المنصة</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-envelope"></i> eltaweel.actuary@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 00201009938125</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>جميع الحقوق محفوظة &copy; 2026 توافق</p>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <button class="close-modal">&times;</button>
+            <div class="form-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <form id="tawafuqForm">
+                <!-- Step 1: Basics -->
+                <div class="form-step active" data-step="1">
+                    <h2 class="form-step-title">البداية: <span>من أنت؟</span></h2>
+                    <div class="form-group">
+                        <label>البريد الإلكتروني *</label>
+                        <input type="email" name="email" required placeholder="example@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label>النوع (الجنس) *</label>
+                        <div class="radio-group horizontal">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="ذكر" required> ذكر
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="أنثى"> أنثى
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Personal Info -->
+                <div class="form-step" data-step="2">
+                    <h2 class="form-step-title" id="step2Title">بياناتك الشخصية</h2>
+                    <div class="form-group">
+                        <label>ارفق صورة شخصية (اختياري)</label>
+                        <input type="file" name="photo" accept="image/*">
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>الاسم ثلاثي *</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>تاريخ الميلاد *</label>
+                            <input type="date" name="dob" required>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>الطول (سم)</label>
+                            <input type="number" name="height">
+                        </div>
+                        <div class="form-group">
+                            <label>الوزن (كجم)</label>
+                            <input type="number" name="weight">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>المؤهل الدراسي *</label>
+                        <select name="education" required>
+                            <option value="">اختر...</option>
+                            <option value="بدون مؤهل">بدون مؤهل</option>
+                            <option value="متوسط">متوسط</option>
+                            <option value="جامعي">جامعي</option>
+                            <option value="دراسات عليا">دراسات عليا</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>الوظيفة والتخصص ومكان العمل *</label>
+                        <textarea name="job" required placeholder="مثال: دكتور - تخصص باطن - الإسكندرية"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>لون البشرة *</label>
+                        <input type="text" name="skinColor" required>
+                    </div>
+                </div>
+
+                <!-- Step 3: Status & Residence -->
+                <div class="form-step" data-step="3">
+                    <h2 class="form-step-title">الحالة الاجتماعية والسكن</h2>
+                    <div class="form-group">
+                        <label>الحالة الاجتماعية *</label>
+                        <select name="maritalStatus" id="maritalStatus" required>
+                            <option value="">اختر...</option>
+                            <option value="أعزب">أعزب/عزباء</option>
+                            <option value="مطلق">مطلق/مطلقة</option>
+                            <option value="أرمل">أرمل/أرملة</option>
+                            <option value="متزوج">متزوج وأريد زوجة ثانية</option>
+                        </select>
+                    </div>
+                    
+                    <div id="polygamyDetails" class="conditional-field">
+                        <label>تفاصيل ظروف التعدد *</label>
+                        <textarea name="polygamyInfo"></textarea>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>هل يوجد أطفال؟</label>
+                            <select name="hasChildren">
+                                <option value="لا">لا</option>
+                                <option value="نعم">نعم</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>هل مقيمين معك؟</label>
+                            <select name="childrenWithYou">
+                                <option value="لا">لا</option>
+                                <option value="نعم">نعم</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>المحافظة *</label>
+                        <select name="governorate" required>
+                            <option value="القاهرة">القاهرة</option>
+                            <option value="الجيزة">الجيزة</option>
+                            <option value="الإسكندرية">الإسكندرية</option>
+                            <option value="غير مصري">غير مصري</option>
+                            <!-- More can be added -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>هل أنت مغترب؟</label>
+                        <select name="isExpat" id="isExpat">
+                            <option value="لا">لا</option>
+                            <option value="نعم">نعم</option>
+                        </select>
+                    </div>
+
+                    <div id="expatDetails" class="conditional-field">
+                        <label>هل تنوي أخذ العروس معك للخارج؟</label>
+                        <select name="takeSpouseAbroad">
+                            <option value="حسب الاتفاق">حسب الاتفاق</option>
+                            <option value="نعم">نعم</option>
+                            <option value="لا">لا</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Step 4: Religion & Lifestyle -->
+                <div class="form-step" data-step="4">
+                    <h2 class="form-step-title">نمط الحياة والالتزام</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>هل أنت مدخن؟</label>
+                            <select name="isSmoker">
+                                <option value="لا">لا</option>
+                                <option value="نعم">نعم</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>المحافظة على الصلوات الخمس؟</label>
+                            <select name="prayers">
+                                <option value="نعم">نعم</option>
+                                <option value="أحياناً">أحياناً</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>مقدار حفظ القرآن الكريم *</label>
+                        <input type="text" name="quran" required placeholder="عدد الأجزاء">
+                    </div>
+                    <div class="form-group">
+                        <label>هل تعاني من أي أمراض أو إعاقات؟ *</label>
+                        <select name="hasHealthIssues" id="hasHealthIssues" required>
+                            <option value="لا">لا</option>
+                            <option value="نعم">نعم</option>
+                        </select>
+                    </div>
+                    <div id="healthDetails" class="conditional-field">
+                        <label>اذكر التفاصيل المرضية</label>
+                        <textarea name="healthInfo"></textarea>
+                    </div>
+                </div>
+
+                <!-- Step 5: Partner Criteria -->
+                <div class="form-step" data-step="5">
+                    <h2 class="form-step-title">مواصفات <span>شريك الحياة</span></h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>السن المطلوب (من)</label>
+                            <input type="number" name="partnerAgeMin" value="18">
+                        </div>
+                        <div class="form-group">
+                            <label>السن المطلوب (إلى)</label>
+                            <input type="number" name="partnerAgeMax" value="35">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>الحالة الاجتماعية المطلوبة للموافقة</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="partnerStatus" value="أعزب"> أعزب/عزباء</label>
+                            <label><input type="checkbox" name="partnerStatus" value="مطلق بدون أطفال"> مطلق/ة بدون أطفال</label>
+                            <label><input type="checkbox" name="partnerStatus" value="مطلق مع أطفال"> مطلق/ة مع أطفال</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>رأيك في عمل الزوجة؟</label>
+                        <select name="partnerWork">
+                            <option value="لا">لا أقبل</option>
+                            <option value="نعم">أقبل</option>
+                            <option value="بشروط">بشروط</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>حجاب الزوجة المطلوب</label>
+                        <select name="partnerHijab">
+                            <option value="حجاب عادي">حجاب عادي</option>
+                            <option value="خمار">مختمرة</option>
+                            <option value="منقبة">منتقبة</option>
+                            <option value="نية للنقاب">ديها نية للنقاب</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Step 6: Contact & Final -->
+                <div class="form-step" data-step="6">
+                    <h2 class="form-step-title">معلومات التواصل الأخيرة</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>رقم الواتساب *</label>
+                            <input type="text" name="whatsapp" required>
+                        </div>
+                        <div class="form-group">
+                            <label>اليوزر على تليجرام *</label>
+                            <input type="text" name="telegram" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>رابط الفيسبوك *</label>
+                        <input type="url" name="facebook" required>
+                    </div>
+                    <div class="form-group">
+                        <label>أخبرنا عن نفسك وعن أهلك (نبذة مختصرة) *</label>
+                        <textarea name="bio" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>هل ترغب بعمل قائمة منقولات زوجية؟</label>
+                        <select name="mankulat">
+                            <option value="أوافق">أوافق</option>
+                            <option value="لا أوافق وأفرش شقتي وحدي">لا أوافق وأفرش شقتي وحدي</option>
+                            <option value="حسب الاتفاق">حسب الاتفاق</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-navigation">
+                    <button type="button" id="prevBtn" class="btn btn-outline" style="display: none;">السابق</button>
+                    <button type="button" id="nextBtn" class="btn btn-primary">التالي</button>
+                    <button type="submit" id="submitBtn" class="btn btn-primary" style="display: none;">إرسال البيانات</button>
+                </div>
+            </form>
+            
+            <div id="formSuccess" class="success-message text-center" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <h2>تم إرسال طلبك بنجاح!</h2>
+                <p>سنتواصل معك قريباً بعد مراجعة البيانات. نسأل الله لك التوفيق والسكينة.</p>
+                <button class="btn btn-primary close-modal">إغلاق</button>
+            </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

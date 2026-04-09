@@ -1,0 +1,9 @@
+Objective
+- Validate browser-based AI for real-time sign language interpretation
+- Functional web application and live demonstration featuring real-time generalized sign language recognition
+
+---
+[Speaker Notes for Demo: "Why browser-based?"]
+- Accessibility: No installation required, runs on any modern device using standard web technologies.
+- Privacy & Edge AI: Video processing runs locally on the user's device. No sensitive video data is sent to cloud servers.
+- Low Latency: Removing the server trip ensures real-time translation speeds, crucial for fluent communication.

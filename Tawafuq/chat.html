@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توافق - غرف الدردشة الآمنة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-11RWJ9C9B8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-11RWJ9C9B8');
+    </script>
+    
+    <!-- Google Analytics Integration -->
+    <script src="analytics.js"></script>
+    <style>
+        .chat-container {
+            height: calc(100vh - 100px);
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .chat-sidebar {
+            background: #f9fafb;
+            border-left: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-main {
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-header {
+            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .messages-area {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .message {
+            max-width: 70%;
+            padding: 12px 18px;
+            border-radius: 15px;
+            font-size: 0.95rem;
+        }
+        .message.sent {
+            align-self: flex-start;
+            background: var(--primary-color);
+            color: var(--white);
+            border-bottom-right-radius: 2px;
+        }
+        .message.received {
+            align-self: flex-end;
+            background: var(--white);
+            color: var(--text-color);
+            border-bottom-left-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .chat-input-area {
+            padding: 20px;
+            background: var(--white);
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            gap: 10px;
+        }
+        .chat-input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-family: 'Almarai', sans-serif;
+        }
+        .contact-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #f3f4f6;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .contact-item:hover, .contact-item.active {
+            background: #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+                    <span>توافق</span>
+                </a>
+            </div>
+            <div class="nav-actions">
+                <span id="userNameDisplay" style="margin-left: 15px; font-weight: 700;"></span>
+                <button class="btn btn-outline" id="backToHome">الرئيسية</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="chat-container">
+            <aside class="chat-sidebar">
+                <div style="padding: 20px; background: var(--primary-color); color: var(--white);">
+                    <h3>المحادثات</h3>
+                </div>
+                <div id="contactsList">
+                    <!-- Contacts will be loaded here -->
+                    <div class="contact-item active">
+                        <strong>إدارة توافق</strong>
+                        <p style="font-size: 0.8rem; color: #6b7280;">مرحباً بك في المحادثة الآمنة</p>
+                    </div>
+                </div>
+            </aside>
+            
+            <main class="chat-main">
+                <header class="chat-header">
+                    <div id="activeContactName" style="font-weight: 700; font-size: 1.2rem;">إدارة توافق</div>
+                    <div class="status-badge"><i class="fas fa-circle" style="color: #10b981; font-size: 0.7rem;"></i> نشط حالياً</div>
+                </header>
+                
+                <div class="messages-area" id="messagesArea">
+                    <div class="message received">أهلاً بك في منصة توافق. هنا يمكنك التواصل بخصوصية تامة مع الأطراف التي تمت الموافقة عليها.</div>
+                    <div class="message sent">شكراً لكم، هل هناك أي تحديثات بخصوص طلبي؟</div>
+                </div>
+                
+                <form class="chat-input-area" id="chatForm">
+                    <input type="text" class="chat-input" id="messageInput" placeholder="اكتب رسالتك هنا..." autocomplete="off">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </main>
+        </div>
+    </div>
+
+    <!-- Firebase SDK (v9 compat) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+    <script type="module" src="chat.js"></script>
+</body>
+</html>
