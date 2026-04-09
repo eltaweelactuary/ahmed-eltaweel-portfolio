@@ -7,9 +7,10 @@
 
 function doPost(e) {
   // === الإعدادات المثبتة ===
-  var sheetId = '1-Wlq_U6T-y-i2mR6yWf8PqI6bY9v-02E0p6E2o8P_E'; // معرف الشيت الخاص بك
+  var sheetId = '1YiM9Sd80olaGFN2PcIDskfFNdXinO1KUB4493-VPFts'; // معرف الشيت الخاص بك
   var sheetName = 'المشتركين'; // تأكد أن هذا هو اسم ورقة العمل
-  var adminEmail = 'ahmed.eltaweel.actuary@gmail.com'; 
+  // سنحاول الإرسال للإيميلين للتأكد من وصول التنبيه
+  var adminEmails = 'ahmed.eltaweel.actuary@gmail.com, eltaweel.actuary@gmail.com'; 
   
   try {
     var rawData = e.postData.contents;
@@ -63,7 +64,7 @@ function doPost(e) {
                   "------------------\n\n" +
                   "يرجى مراجعة الشيت للاطلاع على باقي البيانات.";
     
-    MailApp.sendEmail(adminEmail, subject, message);
+    GmailApp.sendEmail(adminEmails, subject, message);
     
     return ContentService.createTextOutput(JSON.stringify({ "status": "success" }))
       .setMimeType(ContentService.MimeType.JSON);
@@ -72,4 +73,14 @@ function doPost(e) {
     return ContentService.createTextOutput(JSON.stringify({ "status": "error", "message": err.toString() }))
       .setMimeType(ContentService.MimeType.JSON);
   }
+}
+
+/**
+ * دالة لتجربة الإيميل وتفعيل التصاريح
+ * اختر هذه الدالة من القائمة العلوية في Apps Script واضغط Run
+ */
+function testEmail() {
+  var adminEmails = 'ahmed.eltaweel.actuary@gmail.com, eltaweel.actuary@gmail.com';
+  GmailApp.sendEmail(adminEmails, "اختبار منصة توافق (نسخة مطورة)", "إذا وصلت هذه الرسالة، فالتصاريح تعمل بنجاح والإيميل صحيح!");
+  Logger.log("تم إرسال إيميل تجريبي لـ: " + adminEmails);
 }

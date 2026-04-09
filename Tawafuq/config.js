@@ -6,7 +6,7 @@ export const CONFIG = {
     googleFormUrl: "https://docs.google.com/forms/d/1KwTzfs5yG793G9ufGCs5HydqYkw1nJ62tZEhs7DnQaE/viewform",
     
     // Spreadsheet ID attached to the Google Form
-    spreadsheetId: "1-Wlq_U6T-y-i2mR6yWf8PqI6bY9v-02E0p6E2o8P_E", // Example or user's ID
+    spreadsheetId: "1YiM9Sd80olaGFN2PcIDskfFNdXinO1KUB4493-VPFts", // Example or user's ID
     sheetGid: "0",
     
     // The Web App URL from Google Apps Script (User needs to paste this after deployment)
