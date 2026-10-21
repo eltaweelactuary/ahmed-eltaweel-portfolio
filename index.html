@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Eltaweel | AI Product Solution Architect | GenAI & Agentic AI</title>
+    <title>Ahmed Eltaweel | Founder, Takamol AI | AI Solution Architect & Actuary</title>
     <meta name="description"
-        content="Professional portfolio of Ahmed Eltaweel - AI Product Solution Architect specializing in GenAI, Agentic AI, Hybrid Router Architectures, and Enterprise AI Products.">
+        content="Portfolio of Ahmed Eltaweel - Founder of Takamol AI, AI Product Solution Architect and actuary (M.Sc. Data Science, Cairo University). AI systems integration outsourcing on your own cloud stack, AI and actuarial consulting.">
+    <link rel="icon" type="image/png" href="img/takamol-mark.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -157,6 +158,92 @@
             transform: translateY(-2px);
         }
 
+        /* ===== 2026 update: Takamol brand, services, research, contact ===== */
+        .logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+        .brand-mark {
+            width: 42px; height: 42px; border-radius: 12px; background: #fff;
+            padding: 3px; object-fit: contain; box-shadow: 0 0 18px rgba(235, 171, 65, 0.35);
+        }
+        .nav-cta {
+            display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 30px;
+            background: linear-gradient(90deg, #043361, #0b5a9c); color: #fff; text-decoration: none;
+            font-weight: 600; border: 1px solid rgba(235, 171, 65, 0.6); font-size: 0.9rem;
+        }
+        .nav-cta:hover { box-shadow: 0 0 20px rgba(235, 171, 65, 0.45); }
+        .nav-actions { display: flex; gap: 10px; align-items: center; }
+        .hero-role { color: var(--gold); font-weight: 600; letter-spacing: 0.5px; margin-top: 10px; }
+        .btn-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+        .btn-ghost {
+            display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 30px;
+            color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem;
+            background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: all 0.3s ease;
+        }
+        .btn-ghost:hover { border-color: var(--gold); transform: translateY(-2px); }
+        .btn-ghost.gold { background: var(--gold); color: #000; border: none; }
+        .btn-ghost.navy { background: #043361; border-color: #EBAB41; }
+        .btn-ghost.li { background: #0A66C2; border: none; }
+
+        .takamol-wrap { display: grid; grid-template-columns: 280px 1fr; gap: 40px; align-items: center; }
+        .takamol-logo-card {
+            background: #fff; border-radius: 28px; padding: 22px; text-align: center;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(235, 171, 65, 0.25);
+        }
+        .takamol-logo-card img { width: 100%; max-width: 230px; height: auto; display: block; margin: 0 auto; }
+        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 22px; }
+        .link-card {
+            display: block; padding: 20px; border-radius: 20px; text-decoration: none; color: var(--text-main);
+            background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.3s ease;
+        }
+        .link-card:hover { transform: translateY(-5px); border-color: #EBAB41; background: rgba(255, 255, 255, 0.08); }
+        .link-card h4 { margin: 0 0 6px; color: var(--gold); font-size: 1.05rem; }
+        .link-card p { margin: 0; font-size: 0.88rem; color: var(--text-dim); line-height: 1.55; }
+        .link-card.sol p { margin-bottom: 8px; }
+        .link-card.sol p b { color: #fff; }
+        .disclaimer { margin-top: 18px; font-size: 0.78rem; color: var(--text-dim); max-width: 900px; line-height: 1.6; }
+        .link-card .go { display: inline-block; margin-top: 10px; font-size: 0.8rem; color: var(--primary-neon); font-weight: 600; }
+
+        .stack-card { padding: 22px; border-radius: 20px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .stack-card h4 { margin: 0 0 6px; display: flex; align-items: center; gap: 10px; font-size: 1.05rem; color: #fff; }
+        .stack-card h4 i { font-size: 1.5rem; }
+        .stack-card p { font-size: 0.86rem; color: var(--text-dim); margin: 0 0 4px; line-height: 1.55; }
+        .stack-card .mini-tags { margin-top: 12px; }
+        .services-intro { max-width: 900px; color: var(--text-dim); line-height: 1.75; font-size: 1.02rem; }
+        .sub-title { margin: 38px 0 4px; color: #fff; font-size: 1.35rem; }
+        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-top: 18px; }
+        .step { padding: 16px; border-radius: 16px; background: rgba(4, 51, 97, 0.35); border: 1px solid rgba(235, 171, 65, 0.35); }
+        .step b { color: var(--gold); display: block; font-size: 0.8rem; letter-spacing: 1.5px; }
+        .step span { font-size: 0.9rem; color: #fff; }
+
+        .degree-card { padding: 26px; border-radius: 22px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 215, 0, 0.35); }
+        .degree-card .deg { color: var(--gold); font-weight: 800; letter-spacing: 1px; font-size: 0.85rem; text-transform: uppercase; }
+        .degree-card h3 { margin: 8px 0; line-height: 1.4; }
+        .degree-card ul { margin: 12px 0 0; padding-left: 18px; color: var(--text-dim); line-height: 1.7; font-size: 0.92rem; }
+        .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 18px; }
+        .kpi { text-align: center; padding: 14px; border-radius: 16px; background: rgba(0, 242, 255, 0.06); border: 1px solid rgba(0, 242, 255, 0.2); }
+        .kpi strong { display: block; font-size: 1.4rem; color: var(--primary-neon); }
+        .kpi span { font-size: 0.78rem; color: var(--text-dim); }
+        .paper { padding: 18px 20px; border-radius: 16px; background: rgba(255, 255, 255, 0.04); border-left: 4px solid var(--gold); margin-top: 14px; }
+        .paper h4 { margin: 0 0 6px; font-size: 0.98rem; line-height: 1.5; color: #fff; }
+        .paper p { margin: 0; font-size: 0.82rem; color: var(--text-dim); }
+        .status-pill { display: inline-block; margin-top: 8px; padding: 3px 12px; border-radius: 12px; font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; background: rgba(255, 215, 0, 0.12); color: var(--gold); }
+
+        .fab-stack { position: fixed; right: 18px; bottom: 18px; display: flex; flex-direction: column; gap: 10px; z-index: 2000; }
+        .fab {
+            width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: 1.35rem; text-decoration: none; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45); transition: transform 0.2s ease;
+        }
+        .fab:hover, .fab:focus-visible { transform: scale(1.1); outline: 2px solid #fff; }
+        .fab.wa { background: #25D366; } .fab.li { background: #0A66C2; } .fab.tk { background: #fff; padding: 4px; }
+        .fab.tk img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+        .fab.up { background: rgba(255, 255, 255, 0.15); }
+
+        @media (max-width: 900px) {
+            .takamol-wrap { grid-template-columns: 1fr; }
+            .takamol-logo-card { max-width: 260px; margin: 0 auto; }
+            .nav-cta span { display: none; }
+        }
+
         @media (max-width: 900px) {
             .cert-container {
                 padding: 1.5rem 2rem;
@@ -183,29 +270,41 @@
     <div class="cursor-glow"></div>
 
     <nav class="glass-nav">
-        <a href="#hero" class="logo"><span class="gradient-text">Takamol</span><span
-                style="color: var(--gold);">.ai</span></a>
+        <a href="#hero" class="logo" aria-label="Takamol AI - home"><img src="img/takamol-mark.png" alt="Takamol logo"
+                class="brand-mark"><span><span class="gradient-text">Takamol</span><span
+                    style="color: var(--gold);"> AI</span></span></a>
         <ul class="nav-links">
+            <li><a href="#takamol">Takamol</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#agentic-ai">Agentic AI</a></li>
-            <li><a href="#data-analytics">Data</a></li>
-            <li><a href="#risk-actuarial">Risk</a></li>
             <li><a href="#academic">Research</a></li>
-            <li><a href="#training">Training</a></li>
             <li><a href="#vault">Vault</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="https://www.paypal.com/paypalme/atomiceltaweel" class="btn-support" target="_blank">Support Me</a>
+        <div class="nav-actions">
+            <a href="https://takamol-ai.web.app" class="nav-cta" target="_blank" rel="noopener noreferrer"><i
+                    class="fas fa-globe"></i><span>Takamol AI</span></a>
+            <a href="https://www.paypal.com/paypalme/atomiceltaweel" class="btn-support" target="_blank" rel="noopener noreferrer">Support Me</a>
+        </div>
     </nav>
 
     <section class="hero" id="hero">
         <div class="hero-content">
-            <h2>AI Product Solution Architect</h2>
+            <h2>AI Product Solution Architect · Actuary</h2>
             <h1>Ahmed <span class="gradient-text">Eltaweel</span></h1>
-            <p>Architecting production-grade <strong>Agentic AI</strong>, <strong>Hybrid Router Architectures</strong>, and <strong>On-Premises AI Deployments</strong>. Currently leading <strong>Konecta Sign (Wasel)</strong> — enterprise sign language translation platform with hybrid MediaPipe + FAISS + Gemini architecture.</p>
+            <p class="hero-role"><i class="fas fa-graduation-cap"></i> M.Sc. in Data Science, Cairo University (2026) &nbsp;·&nbsp; Founder &amp; Lead AI Engineer, Takamol AI</p>
+            <p>Architecting production-grade <strong>Agentic AI</strong>, <strong>Hybrid Router Architectures</strong>, and <strong>On-Premises AI Deployments</strong>. Founder of <strong>Takamol AI</strong> — integrated AI systems and consulting for insurance, health, government and enterprise, delivered on each client's own technology stack. AI Product Solution Architect at Konecta Global, leading <strong>Konecta Sign (Wasel)</strong>.</p>
             <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 30px;">
                 <a href="Ahmed_Eltaweel_ATS_CV.pdf" target="_blank" class="btn-primary"
                     style="background: var(--gold); color: #000; border: none; padding: 15px 35px;"><i
                         class="fas fa-file-pdf"></i> Download CV</a>
-                <a href="#agentic-ai" class="btn-primary">Explore Work</a>
+                <a href="#services" class="btn-primary">Services</a>
+                <a href="#contact" class="btn-primary">Contact</a>
+            </div>
+            <div class="btn-row">
+                <a href="https://takamol-ai.web.app" class="btn-ghost navy" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Takamol AI website</a>
+                <a href="https://www.linkedin.com/in/ahmed-eltaweel-5b53a38b" class="btn-ghost li" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.linkedin.com/company/takamol-ai" class="btn-ghost" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> Takamol AI on LinkedIn</a>
             </div>
         </div>
         <div class="hero-visual">
@@ -229,8 +328,8 @@
             <div class="cert-card">
                 <i class="fa-brands fa-aws"></i>
                 <div>
-                    <h4>AWS Certified Machine Learning</h4>
-                    <span class="badge-premium badge-blue">Specialty</span>
+                    <h4>AWS Certified Machine Learning Engineer</h4>
+                    <span class="badge-premium badge-blue">Associate</span>
                 </div>
             </div>
             <div class="cert-card">
@@ -248,6 +347,129 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Takamol AI venture -->
+    <section id="takamol" class="chapter-section reveal-up">
+        <span class="section-badge">Venture</span>
+        <h2 class="chapter-title">Takamol <span class="gradient-text">AI</span></h2>
+        <div class="takamol-wrap">
+            <div class="takamol-logo-card">
+                <img src="img/takamol-logo.png" alt="Takamol - Integration Solutions & Services logo" loading="lazy">
+            </div>
+            <div>
+                <p class="services-intro"><strong>Takamol (Integration) — Solutions &amp; Services</strong> is an Arabic-first applied-AI and InsurTech venture I founded in June 2026, currently pre-incorporation. Its portfolio of 11 products and services across 7 industries is packaged into <strong>integrated solutions</strong>: each one combines several products on one shared security, AI and data platform, connects to the systems a client already runs, and is deployed where the client's data is allowed to live. Public demos use synthetic data; private demos are shown by appointment.</p>
+                <div class="btn-row">
+                    <a href="https://takamol-ai.web.app" class="btn-ghost gold" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Visit takamol-ai.web.app</a>
+                    <a href="https://takamol-ai.web.app/products" class="btn-ghost navy" target="_blank" rel="noopener noreferrer"><i class="fas fa-cubes"></i> All products</a>
+                    <a href="https://www.linkedin.com/company/takamol-ai" class="btn-ghost li" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> Follow on LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <h3 class="sub-title">Integrated Solutions</h3>
+        <div class="grid-cards">
+            <div class="link-card sol">
+                <h4><i class="fas fa-shield-heart"></i> Integrated InsurTech Solution</h4>
+                <p><b>Challenge:</b> insurers need fairer health and life pricing without collecting raw personal data.</p>
+                <p><b>Integrates:</b> Takamol Insurance Platform (on-device activity index from Health Connect steps, on-device face-liveness e-KYC, underwriting, collections and claims) + Actuarial Studio (explainable pricing, claim-cost prediction, fund projection) + sandbox governance pack.</p>
+                <p><b>Safeguards:</b> raw step records stay on the phone; the licensed insurer and its underwriter keep every decision; shadow test with no premium effect first.</p>
+                <div class="mini-tags"><span>Private demo</span><span>Actuarial Studio: live demo</span></div>
+                <a class="go" href="https://takamol-ai.web.app/industries/insurance-health" target="_blank" rel="noopener noreferrer">See the solution →</a>
+            </div>
+            <div class="link-card sol">
+                <h4><i class="fas fa-building-columns"></i> Integrated Enterprise &amp; Government Operations</h4>
+                <p><b>Challenge:</b> approvals, procurement and tender files spread across e-mail and spreadsheets.</p>
+                <p><b>Integrates:</b> Enterprise Suite (approvals, procurement, HR, IT assets, tax calendar) + Tender Intelligence (cited answers from tender files).</p>
+                <p><b>Deployment:</b> client cloud or on-premises, with human approval on every decision.</p>
+                <div class="mini-tags"><span>Live demos</span><span>On-prem option</span></div>
+                <a class="go" href="https://takamol-ai.web.app/industries/gov-enterprise" target="_blank" rel="noopener noreferrer">See the solution →</a>
+            </div>
+            <div class="link-card sol">
+                <h4><i class="fas fa-comments"></i> Integrated Customer Experience &amp; Accessibility</h4>
+                <p><b>Challenge:</b> customers reach service providers by chat, voice and sign language, in Egyptian Arabic.</p>
+                <p><b>Integrates:</b> Omnichannel CX (one inbox, Egyptian-Arabic bot with human hand-off) + Egyptian Voice Journal (Arabic transcription and summaries) + Tawasol (real-time Egyptian sign-language translation).</p>
+                <div class="mini-tags"><span>Omnichannel CX: live demo</span><span>Tawasol demo</span></div>
+                <a class="go" href="https://takamol-tawasol.web.app" target="_blank" rel="noopener noreferrer">Open Tawasol →</a>
+                <a class="go" href="https://takamol-ai.web.app/industries/cx-utilities" target="_blank" rel="noopener noreferrer" style="margin-left: 14px;">See CX →</a>
+            </div>
+            <div class="link-card sol">
+                <h4><i class="fas fa-bolt"></i> Integrated Utilities Control Room</h4>
+                <p><b>Challenge:</b> control-room teams must forecast load, isolate faults and inform customers fast.</p>
+                <p><b>Integrates:</b> Grid Agents — cooperating AI agents for load forecasting, feeder monitoring, fault isolation and customer SMS drafts, with an operator approving each action.</p>
+                <div class="mini-tags"><span>Live demo</span><span>Synthetic data</span></div>
+                <a class="go" href="https://takamol-ai.web.app/industries/cx-utilities" target="_blank" rel="noopener noreferrer">See the solution →</a>
+            </div>
+            <div class="link-card sol">
+                <h4><i class="fas fa-user-tie"></i> Integrated Talent &amp; Wellbeing</h4>
+                <p><b>Challenge:</b> people and HR teams lose time on job search, applications and daily planning.</p>
+                <p><b>Integrates:</b> Job Radar and PhD Radar (daily discovery, AI fit scoring, drafts for human review) + ADHD Command Center (focus and planning, data kept on the device).</p>
+                <div class="mini-tags"><span>By appointment</span></div>
+                <a class="go" href="https://takamol-ai.web.app/industries/hr-talent" target="_blank" rel="noopener noreferrer">See the solution →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services: Integrated systems outsourcing + consulting -->
+    <section id="services" class="chapter-section odd reveal-up">
+        <span class="section-badge">Services</span>
+        <h2 class="chapter-title">Integrated Systems <span class="gradient-text">Outsourcing &amp; Consulting</span></h2>
+        <p class="services-intro">End-to-end outsourcing of integrated systems — with a focus on solutions that contain AI — built on <strong>your company's own technology stack</strong>. Your data stays in your cloud account or your data centre, your team keeps ownership of the code, and the solution plugs into the systems you already run (ERP, CRM, core insurance, document management, identity).</p>
+
+        <h3 class="sub-title">Built on your stack</h3>
+        <div class="grid-cards">
+            <div class="stack-card">
+                <h4><i class="fa-brands fa-aws" style="color: var(--aws-orange);"></i> AWS</h4>
+                <p>Generative AI, RAG and ML services inside your AWS account.</p>
+                <div class="mini-tags"><span>Amazon Bedrock</span><span>SageMaker</span><span>Lambda</span><span>API Gateway</span><span>S3</span><span>OpenSearch</span><span>Step Functions</span></div>
+            </div>
+            <div class="stack-card">
+                <h4><i class="fa-brands fa-google google-brand-icon"></i> Google Cloud</h4>
+                <p>Gemini-powered agents, enterprise search and analytics on your GCP project.</p>
+                <div class="mini-tags"><span>Vertex AI</span><span>Gemini</span><span>Vertex AI Search</span><span>BigQuery ML</span><span>Cloud Run</span><span>Firebase</span></div>
+            </div>
+            <div class="stack-card">
+                <h4><i class="fa-brands fa-microsoft" style="color: #00A4EF;"></i> Microsoft</h4>
+                <p>AI and analytics for organisations standardised on Microsoft.</p>
+                <div class="mini-tags"><span>Azure OpenAI</span><span>Azure AI Search</span><span>Azure ML</span><span>Power BI</span><span>Entra ID</span></div>
+            </div>
+            <div class="stack-card">
+                <h4><i class="fas fa-server" style="color: var(--gold);"></i> On-Premises / Air-Gapped</h4>
+                <p>Zero cloud egress for government and regulated clients that require data sovereignty.</p>
+                <div class="mini-tags"><span>Open-weight LLMs</span><span>FAISS / pgvector</span><span>Docker</span><span>Kubernetes</span><span>MediaPipe (on-device)</span></div>
+            </div>
+        </div>
+
+        <h3 class="sub-title">What we deliver</h3>
+        <div class="grid-cards">
+            <div class="stack-card"><h4><i class="fas fa-diagram-project" style="color: var(--primary-neon);"></i> AI Systems Integration</h4><p>Agentic AI, RAG over company documents, AI assistants and computer-vision features integrated into existing workflows and systems.</p></div>
+            <div class="stack-card"><h4><i class="fas fa-people-group" style="color: var(--primary-neon);"></i> Dedicated AI Team</h4><p>Outsourced delivery team or staff augmentation working inside your tools, repositories and security policies.</p></div>
+            <div class="stack-card"><h4><i class="fas fa-arrows-rotate" style="color: var(--primary-neon);"></i> Build-Operate-Transfer</h4><p>We build and run the system, then hand over the code, documentation and operations to your team.</p></div>
+            <div class="stack-card"><h4><i class="fas fa-gauge-high" style="color: var(--primary-neon);"></i> Managed AI Operations</h4><p>Monitoring, model evaluation, cost control and continuous improvement after go-live.</p></div>
+        </div>
+
+        <h3 class="sub-title">Consulting</h3>
+        <div class="grid-cards">
+            <div class="stack-card"><h4><i class="fas fa-chess" style="color: var(--gold);"></i> AI Strategy &amp; Use Cases</h4><p>Identify and prioritise AI use cases by value and feasibility, with a clear roadmap and business case.</p></div>
+            <div class="stack-card"><h4><i class="fas fa-sitemap" style="color: var(--gold);"></i> Architecture &amp; Cloud Cost Review</h4><p>Solution architecture review, hybrid router designs and cloud cost optimisation for AI workloads.</p></div>
+            <div class="stack-card"><h4><i class="fas fa-scale-balanced" style="color: var(--gold);"></i> AI Governance &amp; Regulatory Readiness</h4><p>Privacy by design, explainable models and documentation aligned with recognised frameworks such as NIST AI RMF, for regulator sandboxes and audits.</p></div>
+            <div class="stack-card"><h4><i class="fas fa-chart-line" style="color: var(--gold);"></i> Actuarial &amp; Risk Consulting</h4><p>Pricing and mortality models, experience studies, IFRS 17 reporting support and enterprise risk management (ISO 31000).</p></div>
+            <div class="stack-card"><h4><i class="fas fa-chalkboard-user" style="color: var(--gold);"></i> Corporate Training</h4><p>Hands-on workshops on RAG, Agentic AI, Vertex AI and data analytics for enterprise teams.</p></div>
+        </div>
+
+        <h3 class="sub-title">How we engage</h3>
+        <div class="steps">
+            <div class="step"><b>01 · DISCOVER</b><span>Goals, data and current stack</span></div>
+            <div class="step"><b>02 · DESIGN</b><span>Architecture on your stack</span></div>
+            <div class="step"><b>03 · BUILD</b><span>Proof of concept, then production</span></div>
+            <div class="step"><b>04 · INTEGRATE</b><span>Connect to your systems</span></div>
+            <div class="step"><b>05 · OPERATE</b><span>Run, monitor, hand over</span></div>
+        </div>
+        <div class="btn-row" style="margin-top: 28px;">
+            <a href="https://wa.me/201111907502?text=Hello%20Ahmed%2C%20I%27d%20like%20to%20discuss%20an%20AI%20integration%20%2F%20consulting%20project." class="btn-ghost gold" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Request a proposal</a>
+            <a href="mailto:eltaweel.actuary@gmail.com?subject=AI%20integration%20%2F%20consulting%20inquiry" class="btn-ghost"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://takamol-ai.web.app" class="btn-ghost navy" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Takamol AI website</a>
+        </div>
+        <p class="disclaimer">Cloud names describe deployment targets; no official partnership with Amazon Web Services, Google Cloud or Microsoft is implied. Takamol AI is currently pre-incorporation, and regulated insurance engagements run only through a licensed insurer and under the Financial Regulatory Authority's requirements; no regulatory approval is claimed.</p>
     </section>
 
     <!-- Chapter 01: Agentic AI -->
@@ -298,12 +520,11 @@
         <div class="chapter-content reverse">
             <div class="chapter-left">
                 <h3>Precision Insights</h3>
-                <p>Monitoring <strong>10M+ annual records</strong> for national stability. Validated <strong>€2M+
-                        savings</strong> via strategic automation and Power BI ecosystems.</p>
+                <p>Analysed <strong>10M+ records</strong> across Egypt's life insurance and pension sector, with <strong>€2M+ documented savings</strong> through automation and Power BI.</p>
                 <div class="evidence-list">
                     <div class="evidence-item glass">
                         <h4>National BI Dashboard</h4>
-                        <p>Power BI ecosystem for monitoring the national life insurance sector at FRA.</p>
+                        <p>National-scale BI and analytics platform for Egypt's life insurance and pension sector at FRA, unifying data from multiple regulated entities.</p>
                     </div>
                 </div>
             </div>
@@ -329,12 +550,11 @@
         <div class="chapter-content">
             <div class="chapter-left">
                 <h3>Enterprise Risk</h3>
-                <p>Mitigated <strong>50+ operational risks</strong> via ISO 31000. Achieved <strong>15% loss ratio
-                        improvement</strong> with Python-driven actuarial analytics.</p>
+                <p>Designed an <strong>ISO 31000</strong> enterprise risk-management framework and achieved a <strong>15% improvement in loss-ratio accuracy</strong> with ensemble ML models replacing spreadsheet pricing.</p>
                 <div class="evidence-list">
                     <div class="evidence-item glass">
-                        <h4>Life Pricing Models</h4>
-                        <p>Actuarial forecasting and competitive pricing for 15+ insurance entities.</p>
+                        <h4>Product Pricing Supervision</h4>
+                        <p>Reviewed actuarial pricing models for new life, A&amp;H, savings and medical products submitted by regulated companies, and ran sector-wide mortality, morbidity, lapse and expense experience studies.</p>
                     </div>
                 </div>
             </div>
@@ -355,26 +575,52 @@
     <section id="academic" class="chapter-section odd reveal-right">
         <span class="section-badge">Chapter 04</span>
         <h2 class="chapter-title">Academic <span class="gradient-text">Research</span></h2>
-        <div class="chapter-content">
-            <div class="chapter-left">
-                <h3>Longevity Risk</h3>
-                <p>Integrated biological aging metrics (GlycanAge) into survival analysis. Master's specialized in
-                    AI-driven risk modeling at Cairo University.</p>
-                <div class="evidence-list">
-                    <div class="evidence-item glass">
-                        <h4>Master's Thesis</h4>
-                        <p>Deep Learning survival analysis (DeepSurv) for biological age modeling.</p>
-                    </div>
-                </div>
+        <div class="degree-card">
+            <span class="deg"><i class="fas fa-graduation-cap"></i> M.Sc. in Data Science · Awarded 2026</span>
+            <h3>Applying AI Tools to Improve Current Actuarial Pricing and Risk Models Using Wearable Devices Data</h3>
+            <p style="color: var(--text-dim); margin: 0;">Cairo University — Faculty of Graduate Studies for Statistical Research, Department of Data Science.<br>Supervisors: Prof. Abdelhadi Nabih Ahmed and Prof. Mohamed Reda Abonazel.</p>
+            <ul>
+                <li>Built and validated mortality-risk models on the U.S. National Health and Nutrition Examination Survey (NHANES 2003–2006), using held-out samples fixed in advance.</li>
+                <li>Showed that a biomarker-based biological-age model (Phenotypic Age) ranked held-out mortality risk better than chronological age, while its raw probabilities required recalibration.</li>
+                <li>Compared observed and expected deaths under United States and Egyptian life tables, linking statistical models to actuarial pricing practice.</li>
+            </ul>
+            <div class="kpis">
+                <div class="kpi"><strong>8,839</strong><span>participants</span></div>
+                <div class="kpi"><strong>2,043</strong><span>deaths observed</span></div>
+                <div class="kpi"><strong>0.8604 → 0.8759</strong><span>held-out Harrell's C</span></div>
+                <div class="kpi"><strong>1.44</strong><span>calibration slope</span></div>
             </div>
-            <div class="chapter-right glass">
+            <p style="color: var(--text-dim); margin: 16px 0 0; font-size: 0.88rem;"><i class="fas fa-award" style="color: var(--gold);"></i> B.Sc. in Actuarial Science — Cairo University, Faculty of Commerce (2016).</p>
+        </div>
+
+        <h3 class="sub-title">Journal Papers from the Thesis</h3>
+        <div class="paper">
+            <h4>Discrimination Without Calibration: Held-Out Validation of Phenotypic Age for Mortality Risk and Actuarial Benchmarking in a National Cohort</h4>
+            <p>Eltaweel, A. M. I., Ahmed, A. N., &amp; Abonazel, M. R. (2026)</p>
+            <span class="status-pill">UNDER PEER REVIEW</span>
+        </div>
+        <div class="paper">
+            <h4>One Cohort, Five Mortality Bases: Observed-to-Expected Experience and Restricted Mean Survival Under United States and Egyptian Life Tables for a Biomarker-Wearable Risk Score</h4>
+            <p>Eltaweel, A. M. I., Ahmed, A. N., &amp; Abonazel, M. R. (2026)</p>
+            <span class="status-pill">UNDER PEER REVIEW</span>
+        </div>
+        <div class="paper">
+            <h4>Can Hip-Worn Accelerometry Recover or Add to Blood-Based Biological Age? A Held-Out Same-Person Evaluation of a Wearable Proxy and Its Incremental Mortality Value</h4>
+            <p>Eltaweel, A. M. I., Ahmed, A. N., &amp; Abonazel, M. R. (2026)</p>
+            <span class="status-pill">UNDER PEER REVIEW</span>
+        </div>
+
+        <div class="chapter-content" style="margin-top: 30px;">
+            <div class="chapter-right glass" style="width: 100%;">
                 <h3>Research Focus</h3>
                 <div class="certs-mini-grid">
-                    <span class="mini-cert">DeepSurv (Deep Learning)</span>
-                    <span class="mini-cert">Longevity Risk</span>
-                    <span class="mini-cert">Wearable Telemetry</span>
-                    <span class="mini-cert">GlycanAge Integration</span>
-                    <span class="mini-cert">Bio-Metrics</span>
+                    <span class="mini-cert">Survival Analysis (Cox)</span>
+                    <span class="mini-cert">Phenotypic Age</span>
+                    <span class="mini-cert">Longevity &amp; Mortality Risk</span>
+                    <span class="mini-cert">Wearable Accelerometry</span>
+                    <span class="mini-cert">Model Calibration</span>
+                    <span class="mini-cert">Life Tables &amp; O/E Studies</span>
+                    <span class="mini-cert">NHANES</span>
                 </div>
             </div>
         </div>
@@ -387,8 +633,7 @@
         <div class="chapter-content">
             <div class="chapter-left">
                 <h3>Corporate Mentorship</h3>
-                <p>Global AI/ML leader and <strong>AWS Community Builder</strong>. Specializing in workshops on RAG
-                    systems and Agentic AI for enterprise teams across EMEA.</p>
+                <p><strong>Certified Trainer (TOT, FRA)</strong>, speaker at the Egyptian Society of Actuaries and <strong>AWS Community Builder, AI/ML (2022–2025)</strong>. Workshops on RAG systems, Agentic AI and data analytics for enterprise teams.</p>
                 <div class="evidence-list">
                     <div class="evidence-item glass">
                         <h4>Corporate Workshops</h4>
@@ -399,6 +644,7 @@
             <div class="chapter-right glass">
                 <h3>Programs</h3>
                 <div class="certs-mini-grid">
+                    <span class="mini-cert">Certified TOT (FRA)</span>
                     <span class="mini-cert">McKinsey Forward Champion</span>
                     <span class="mini-cert">AWS Community</span>
                     <span class="mini-cert">RAG Training</span>
@@ -414,11 +660,27 @@
         <h2 class="chapter-title">Professional <span class="gradient-text">Journey</span></h2>
         <div class="timeline">
             <div class="timeline-item reveal-up">
+                <div class="time">2026 - Present</div>
+                <div class="content">
+                    <h3>Founder &amp; Lead AI Engineer</h3>
+                    <h4>Takamol AI</h4>
+                    <p>Founded an Arabic-first applied-AI venture delivering integrated AI products and consulting for insurance, health, accessibility (<strong>Tawasol</strong>), government and enterprise. <a href="https://takamol-ai.web.app" target="_blank" rel="noopener noreferrer" style="color: var(--gold);">takamol-ai.web.app</a></p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-up">
+                <div class="time">2026</div>
+                <div class="content">
+                    <h3>M.Sc. in Data Science</h3>
+                    <h4>Cairo University — Faculty of Graduate Studies for Statistical Research</h4>
+                    <p>Thesis on AI tools for actuarial pricing and risk models using wearable-device and biomarker data; three journal papers under peer review.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-up">
                 <div class="time">2024 - Present</div>
                 <div class="content">
                     <h3>AI Product Solution Architect</h3>
                     <h4>Konecta Global</h4>
-                    <p>Leading <strong>Konecta Sign (Wasel)</strong> — enterprise sign language translation platform with hybrid Router architecture (MediaPipe + FAISS + Gemini). Delivering On-Prem AI deployments and rapid PoCs via <strong>vibe coding</strong>.
+                    <p>Leading <strong>Konecta Sign (Wasel)</strong> — enterprise sign language translation platform with hybrid Router architecture (MediaPipe + FAISS + Gemini), cutting GCP API costs by 70%+. Delivered an air-gapped AI deployment for a government pilot and multi-agent RAG systems on Vertex AI.
                     </p>
                 </div>
             </div>
@@ -427,8 +689,7 @@
                 <div class="content">
                     <h3>Senior Actuarial & Data Analyst</h3>
                     <h4>Financial Regulatory Authority (FRA)</h4>
-                    <p>Digitalized national Life Insurance monitoring using BI. Monitoring <strong>10M+ annual
-                            records</strong>.</p>
+                    <p>Reviewed actuarial pricing of new life, A&amp;H, savings and medical products; built the national BI platform for life insurance and pensions; automated IFRS 17-aligned reporting from weeks to days.</p>
                 </div>
             </div>
             <div class="timeline-item reveal-up">
@@ -436,8 +697,7 @@
                 <div class="content">
                     <h3>Actuarial / Risk Analyst</h3>
                     <h4>Mohandes Insurance</h4>
-                    <p>Designed the first ERM framework, mitigating <strong>50+ critical risks</strong> in the first
-                        year.</p>
+                    <p>Designed the company's first <strong>ISO 31000</strong> enterprise risk-management framework and built risk-quantification and capital-adequacy models.</p>
                 </div>
             </div>
         </div>
@@ -450,7 +710,7 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
             <div class="glass reveal-explode">
                 <h4 style="color: var(--gold);">Konecta Sign / Wasel v5 Router Engine</h4>
-                <p style="font-size: 0.9rem;">Evolved from a cloud-first vision LLM monolith to a hybrid edge-server architecture using client-side MediaPipe landmarks, backend Dynamic Time Warping (DTW) matching cache for common phrases, and Gemini fallback — reducing API costs by 80% and achieving sub-5ms latency.</p>
+                <p style="font-size: 0.9rem;">Evolved from a cloud-first vision LLM monolith to a hybrid edge-server architecture using client-side MediaPipe landmarks, backend Dynamic Time Warping (DTW) matching cache for common phrases, and Gemini fallback — cutting GCP API costs by 70%+ and server compute by 90% through client-side processing.</p>
                 <div class="mini-tags"><span>MediaPipe</span> <span>DTW</span> <span>Gemini</span> <span>Flask</span> <span>Socket.IO</span> <span>Docker</span></div>
             </div>
             <div class="glass reveal-explode">
@@ -464,14 +724,14 @@
                 <div class="mini-tags"><span>B2B</span> <span>Flask</span> <span>Presales</span></div>
             </div>
             <div class="glass reveal-explode">
-                <h4 style="color: var(--primary-neon);">Wasel Green Path (Gemini 3 Hackathon)</h4>
+                <h4 style="color: var(--primary-neon);">Tawasol Green Path (Gemini 3 Hackathon)</h4>
                 <p style="font-size: 0.9rem;">AI-powered accessibility route optimization suite reducing emergency response times for the deaf community. Recognized as a finalist at the Google Gemini 3 Hackathon.</p>
                 <div class="mini-tags"><span>Gemini 3</span> <span>CrewAI</span> <span>Google Maps API</span> <span>Hackathon</span></div>
             </div>
             <div class="glass reveal-explode">
-                <h4 style="color: var(--primary-neon);">Actuarial Pricing Orchestrator</h4>
-                <p style="font-size: 0.9rem;">End-to-end Machine Learning pricing and reserves engine transitioning from Jupyter Notebooks to production-grade ML ensembles. Integrates DeepSurv survival models with wearable device telemetry and GlycanAge biomarkers.</p>
-                <div class="mini-tags"><span>Streamlit</span> <span>Python</span> <span>XGBoost</span> <span>CatBoost</span> <span>LightGBM</span> <span>DeepSurv</span></div>
+                <h4 style="color: var(--primary-neon);">Actuarial Studio (Takamol AI)</h4>
+                <p style="font-size: 0.9rem;">Explainable premium calculator showing how each risk factor moves the price, workers' compensation claim-cost prediction with reasons, and a 10-year projection of a universal health insurance fund under stress scenarios.</p>
+                <div class="mini-tags"><span>Python</span> <span>Explainable AI</span> <span>XGBoost</span> <span>Credibility</span> <span>Live demo</span></div>
             </div>
             <div class="glass reveal-explode">
                 <h4 style="color: var(--primary-neon);">Smart DMS RAG</h4>
@@ -507,14 +767,18 @@
         <h2 class="chapter-title">Secure <span class="gradient-text">Connection</span></h2>
         <div class="glass" style="max-width: 800px; margin: 0 auto; text-align: center; padding: 40px;">
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://wa.me/201111907502" class="btn-whatsapp" target="_blank"><i
+                <a href="https://wa.me/201111907502" class="btn-whatsapp" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                <a href="https://t.me/eltaweelactuary" class="btn-telegram" target="_blank"><i
+                <a href="https://t.me/eltaweelactuary" class="btn-telegram" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-telegram"></i> Telegram</a>
-                <a href="https://linkedin.com/in/ahmed-eltaweel-5b53a38b" class="btn-linkedin" target="_blank"><i
+                <a href="https://www.linkedin.com/in/ahmed-eltaweel-5b53a38b" class="btn-linkedin" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="https://eltaweelactuary.github.io/ahmed-eltaweel-portfolio/" class="btn-secondary"
-                    target="_blank"><i class="fa-brands fa-github"></i> Portfolio</a>
+                <a href="mailto:eltaweel.actuary@gmail.com" class="btn-secondary"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <div class="btn-row" style="justify-content: center; margin-top: 22px;">
+                <a href="https://takamol-ai.web.app" class="btn-ghost navy" target="_blank" rel="noopener noreferrer"><img src="img/takamol-mark.png" alt="" style="width: 22px; height: 22px; background: #fff; border-radius: 50%;"> Takamol AI website</a>
+                <a href="https://www.linkedin.com/company/takamol-ai" class="btn-ghost li" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> Takamol AI on LinkedIn</a>
+                <a href="https://takamol-tawasol.web.app" class="btn-ghost" target="_blank" rel="noopener noreferrer"><i class="fas fa-hands"></i> Tawasol</a>
             </div>
             <div class="support-box" style="margin-top: 30px;">
                 <p style="color: var(--text-dim);">Fueling the future of High-Impact AI Architecture.</p>
@@ -525,8 +789,15 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Ahmed Eltaweel. AI Product Solution Architect — Designed for High-Impact Delivery.</p>
+        <p>&copy; 2026 Ahmed Eltaweel · Founder, <a href="https://takamol-ai.web.app" target="_blank" rel="noopener noreferrer" style="color: var(--gold);">Takamol AI</a> — Integration Solutions &amp; Services.</p>
     </footer>
+
+    <div class="fab-stack" aria-label="Quick links">
+        <a class="fab tk" href="https://takamol-ai.web.app" target="_blank" rel="noopener noreferrer" aria-label="Takamol AI website" title="Takamol AI website"><img src="img/takamol-mark.png" alt=""></a>
+        <a class="fab li" href="https://www.linkedin.com/in/ahmed-eltaweel-5b53a38b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="fab wa" href="https://wa.me/201111907502" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="fab up" href="#hero" aria-label="Back to top" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
 
     <script src="script.js"></script>
 </body>
