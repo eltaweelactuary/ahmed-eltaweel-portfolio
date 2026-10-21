@@ -198,6 +198,9 @@
         .link-card:hover { transform: translateY(-5px); border-color: #EBAB41; background: rgba(255, 255, 255, 0.08); }
         .link-card h4 { margin: 0 0 6px; color: var(--gold); font-size: 1.05rem; }
         .link-card p { margin: 0; font-size: 0.88rem; color: var(--text-dim); line-height: 1.55; }
+        .link-card.sol p { margin-bottom: 8px; }
+        .link-card.sol p b { color: #fff; }
+        .disclaimer { margin-top: 18px; font-size: 0.78rem; color: var(--text-dim); max-width: 900px; line-height: 1.6; }
         .link-card .go { display: inline-block; margin-top: 10px; font-size: 0.8rem; color: var(--primary-neon); font-weight: 600; }
 
         .stack-card { padding: 22px; border-radius: 20px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); }
@@ -325,8 +328,8 @@
             <div class="cert-card">
                 <i class="fa-brands fa-aws"></i>
                 <div>
-                    <h4>AWS Certified Machine Learning</h4>
-                    <span class="badge-premium badge-blue">Specialty</span>
+                    <h4>AWS Certified Machine Learning Engineer</h4>
+                    <span class="badge-premium badge-blue">Associate</span>
                 </div>
             </div>
             <div class="cert-card">
@@ -355,7 +358,7 @@
                 <img src="img/takamol-logo.png" alt="Takamol - Integration Solutions & Services logo" loading="lazy">
             </div>
             <div>
-                <p class="services-intro"><strong>Takamol (Integration) — Solutions &amp; Services</strong> is an Arabic-first applied-AI venture I founded in 2026. It builds integrated AI products for insurance, health, accessibility, government and enterprise, with privacy by design and explainable models.</p>
+                <p class="services-intro"><strong>Takamol (Integration) — Solutions &amp; Services</strong> is an Arabic-first applied-AI and InsurTech venture I founded in June 2026, currently pre-incorporation. Its portfolio of 11 products and services across 7 industries is packaged into <strong>integrated solutions</strong>: each one combines several products on one shared security, AI and data platform, connects to the systems a client already runs, and is deployed where the client's data is allowed to live. Public demos use synthetic data; private demos are shown by appointment.</p>
                 <div class="btn-row">
                     <a href="https://takamol-ai.web.app" class="btn-ghost gold" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Visit takamol-ai.web.app</a>
                     <a href="https://takamol-ai.web.app/products" class="btn-ghost navy" target="_blank" rel="noopener noreferrer"><i class="fas fa-cubes"></i> All products</a>
@@ -363,31 +366,46 @@
                 </div>
             </div>
         </div>
+        <h3 class="sub-title">Integrated Solutions</h3>
         <div class="grid-cards">
-            <a class="link-card" href="https://takamol-ai.web.app/industries/insurance-health" target="_blank" rel="noopener noreferrer">
-                <h4><i class="fas fa-shield-heart"></i> Insurance &amp; Health</h4>
-                <p>Takamol Insurance Platform: underwriting, collections and claims with on-device liveness checks, plus explainable actuarial pricing (Actuarial Studio).</p>
-                <span class="go">Open page →</span></a>
-            <a class="link-card" href="https://takamol-tawasol.web.app" target="_blank" rel="noopener noreferrer">
-                <h4><i class="fas fa-hands"></i> Tawasol — Accessibility</h4>
-                <p>Real-time Egyptian sign-language translation through an ordinary camera, helping deaf and hard-of-hearing people communicate with service providers.</p>
-                <span class="go">Open Tawasol →</span></a>
-            <a class="link-card" href="https://takamol-ai.web.app/industries/gov-enterprise" target="_blank" rel="noopener noreferrer">
-                <h4><i class="fas fa-building-columns"></i> Government &amp; Enterprise</h4>
-                <p>Enterprise Suite and Tender Intelligence: documents, procurement, HR, IT assets and cited answers from tender files, with an on-premises option.</p>
-                <span class="go">Open page →</span></a>
-            <a class="link-card" href="https://takamol-ai.web.app/industries/cx-utilities" target="_blank" rel="noopener noreferrer">
-                <h4><i class="fas fa-comments"></i> Customer Experience &amp; Utilities</h4>
-                <p>Omnichannel CX inbox with an Egyptian-Arabic bot, and cooperating Grid Agents for electricity control rooms.</p>
-                <span class="go">Open page →</span></a>
-            <a class="link-card" href="https://takamol-ai.web.app/industries/voice-ai" target="_blank" rel="noopener noreferrer">
-                <h4><i class="fas fa-wave-square"></i> Voice AI</h4>
-                <p>Transcription and summaries for Arabic and Egyptian-dialect audio, with offline recording and a private searchable archive.</p>
-                <span class="go">Open page →</span></a>
-            <a class="link-card" href="https://takamol-ai.web.app/industries/hr-talent" target="_blank" rel="noopener noreferrer">
-                <h4><i class="fas fa-user-tie"></i> HR &amp; Talent</h4>
-                <p>Daily job discovery, AI fit scoring against a CV, and cover letters drafted for human review.</p>
-                <span class="go">Open page →</span></a>
+            <div class="link-card sol">
+                <h4><i class="fas fa-shield-heart"></i> Integrated InsurTech Solution</h4>
+                <p><b>Challenge:</b> insurers need fairer health and life pricing without collecting raw personal data.</p>
+                <p><b>Integrates:</b> Takamol Insurance Platform (on-device activity index from Health Connect steps, on-device face-liveness e-KYC, underwriting, collections and claims) + Actuarial Studio (explainable pricing, claim-cost prediction, fund projection) + sandbox governance pack.</p>
+                <p><b>Safeguards:</b> raw step records stay on the phone; the licensed insurer and its underwriter keep every decision; shadow test with no premium effect first.</p>
+                <div class="mini-tags"><span>Private demo</span><span>Actuarial Studio: live demo</span></div>
+                <a class="go" href="https://takamol-ai.web.app/industries/insurance-health" target="_blank" rel="noopener noreferrer">See the solution →</a>
+            </div>
+            <div class="link-card sol">
+                <h4><i class="fas fa-building-columns"></i> Integrated Enterprise &amp; Government Operations</h4>
+                <p><b>Challenge:</b> approvals, procurement and tender files spread across e-mail and spreadsheets.</p>
+                <p><b>Integrates:</b> Enterprise Suite (approvals, procurement, HR, IT assets, tax calendar) + Tender Intelligence (cited answers from tender files).</p>
+                <p><b>Deployment:</b> client cloud or on-premises, with human approval on every decision.</p>
+                <div class="mini-tags"><span>Live demos</span><span>On-prem option</span></div>
+                <a class="go" href="https://takamol-ai.web.app/industries/gov-enterprise" target="_blank" rel="noopener noreferrer">See the solution →</a>
+            </div>
+            <div class="link-card sol">
+                <h4><i class="fas fa-comments"></i> Integrated Customer Experience &amp; Accessibility</h4>
+                <p><b>Challenge:</b> customers reach service providers by chat, voice and sign language, in Egyptian Arabic.</p>
+                <p><b>Integrates:</b> Omnichannel CX (one inbox, Egyptian-Arabic bot with human hand-off) + Egyptian Voice Journal (Arabic transcription and summaries) + Tawasol (real-time Egyptian sign-language translation).</p>
+                <div class="mini-tags"><span>Omnichannel CX: live demo</span><span>Tawasol demo</span></div>
+                <a class="go" href="https://takamol-tawasol.web.app" target="_blank" rel="noopener noreferrer">Open Tawasol →</a>
+                <a class="go" href="https://takamol-ai.web.app/industries/cx-utilities" target="_blank" rel="noopener noreferrer" style="margin-left: 14px;">See CX →</a>
+            </div>
+            <div class="link-card sol">
+                <h4><i class="fas fa-bolt"></i> Integrated Utilities Control Room</h4>
+                <p><b>Challenge:</b> control-room teams must forecast load, isolate faults and inform customers fast.</p>
+                <p><b>Integrates:</b> Grid Agents — cooperating AI agents for load forecasting, feeder monitoring, fault isolation and customer SMS drafts, with an operator approving each action.</p>
+                <div class="mini-tags"><span>Live demo</span><span>Synthetic data</span></div>
+                <a class="go" href="https://takamol-ai.web.app/industries/cx-utilities" target="_blank" rel="noopener noreferrer">See the solution →</a>
+            </div>
+            <div class="link-card sol">
+                <h4><i class="fas fa-user-tie"></i> Integrated Talent &amp; Wellbeing</h4>
+                <p><b>Challenge:</b> people and HR teams lose time on job search, applications and daily planning.</p>
+                <p><b>Integrates:</b> Job Radar and PhD Radar (daily discovery, AI fit scoring, drafts for human review) + ADHD Command Center (focus and planning, data kept on the device).</p>
+                <div class="mini-tags"><span>By appointment</span></div>
+                <a class="go" href="https://takamol-ai.web.app/industries/hr-talent" target="_blank" rel="noopener noreferrer">See the solution →</a>
+            </div>
         </div>
     </section>
 
@@ -451,6 +469,7 @@
             <a href="mailto:eltaweel.actuary@gmail.com?subject=AI%20integration%20%2F%20consulting%20inquiry" class="btn-ghost"><i class="fas fa-envelope"></i> Email</a>
             <a href="https://takamol-ai.web.app" class="btn-ghost navy" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Takamol AI website</a>
         </div>
+        <p class="disclaimer">Cloud names describe deployment targets; no official partnership with Amazon Web Services, Google Cloud or Microsoft is implied. Takamol AI is currently pre-incorporation, and regulated insurance engagements run only through a licensed insurer and under the Financial Regulatory Authority's requirements; no regulatory approval is claimed.</p>
     </section>
 
     <!-- Chapter 01: Agentic AI -->
@@ -501,12 +520,11 @@
         <div class="chapter-content reverse">
             <div class="chapter-left">
                 <h3>Precision Insights</h3>
-                <p>Monitoring <strong>10M+ annual records</strong> for national stability. Validated <strong>€2M+
-                        savings</strong> via strategic automation and Power BI ecosystems.</p>
+                <p>Analysed <strong>10M+ records</strong> across Egypt's life insurance and pension sector, with <strong>€2M+ documented savings</strong> through automation and Power BI.</p>
                 <div class="evidence-list">
                     <div class="evidence-item glass">
                         <h4>National BI Dashboard</h4>
-                        <p>Power BI ecosystem for monitoring the national life insurance sector at FRA.</p>
+                        <p>National-scale BI and analytics platform for Egypt's life insurance and pension sector at FRA, unifying data from multiple regulated entities.</p>
                     </div>
                 </div>
             </div>
@@ -532,12 +550,11 @@
         <div class="chapter-content">
             <div class="chapter-left">
                 <h3>Enterprise Risk</h3>
-                <p>Mitigated <strong>50+ operational risks</strong> via ISO 31000. Achieved <strong>15% loss ratio
-                        improvement</strong> with Python-driven actuarial analytics.</p>
+                <p>Designed an <strong>ISO 31000</strong> enterprise risk-management framework and achieved a <strong>15% improvement in loss-ratio accuracy</strong> with ensemble ML models replacing spreadsheet pricing.</p>
                 <div class="evidence-list">
                     <div class="evidence-item glass">
-                        <h4>Life Pricing Models</h4>
-                        <p>Actuarial forecasting and competitive pricing for 15+ insurance entities.</p>
+                        <h4>Product Pricing Supervision</h4>
+                        <p>Reviewed actuarial pricing models for new life, A&amp;H, savings and medical products submitted by regulated companies, and ran sector-wide mortality, morbidity, lapse and expense experience studies.</p>
                     </div>
                 </div>
             </div>
@@ -616,8 +633,7 @@
         <div class="chapter-content">
             <div class="chapter-left">
                 <h3>Corporate Mentorship</h3>
-                <p>Global AI/ML leader and <strong>AWS Community Builder</strong>. Specializing in workshops on RAG
-                    systems and Agentic AI for enterprise teams across EMEA.</p>
+                <p><strong>Certified Trainer (TOT, FRA)</strong>, speaker at the Egyptian Society of Actuaries and <strong>AWS Community Builder, AI/ML (2022–2025)</strong>. Workshops on RAG systems, Agentic AI and data analytics for enterprise teams.</p>
                 <div class="evidence-list">
                     <div class="evidence-item glass">
                         <h4>Corporate Workshops</h4>
@@ -628,6 +644,7 @@
             <div class="chapter-right glass">
                 <h3>Programs</h3>
                 <div class="certs-mini-grid">
+                    <span class="mini-cert">Certified TOT (FRA)</span>
                     <span class="mini-cert">McKinsey Forward Champion</span>
                     <span class="mini-cert">AWS Community</span>
                     <span class="mini-cert">RAG Training</span>
@@ -663,7 +680,7 @@
                 <div class="content">
                     <h3>AI Product Solution Architect</h3>
                     <h4>Konecta Global</h4>
-                    <p>Leading <strong>Konecta Sign (Wasel)</strong> — enterprise sign language translation platform with hybrid Router architecture (MediaPipe + FAISS + Gemini). Delivering On-Prem AI deployments and rapid PoCs via <strong>vibe coding</strong>.
+                    <p>Leading <strong>Konecta Sign (Wasel)</strong> — enterprise sign language translation platform with hybrid Router architecture (MediaPipe + FAISS + Gemini), cutting GCP API costs by 70%+. Delivered an air-gapped AI deployment for a government pilot and multi-agent RAG systems on Vertex AI.
                     </p>
                 </div>
             </div>
@@ -672,8 +689,7 @@
                 <div class="content">
                     <h3>Senior Actuarial & Data Analyst</h3>
                     <h4>Financial Regulatory Authority (FRA)</h4>
-                    <p>Digitalized national Life Insurance monitoring using BI. Monitoring <strong>10M+ annual
-                            records</strong>.</p>
+                    <p>Reviewed actuarial pricing of new life, A&amp;H, savings and medical products; built the national BI platform for life insurance and pensions; automated IFRS 17-aligned reporting from weeks to days.</p>
                 </div>
             </div>
             <div class="timeline-item reveal-up">
@@ -681,8 +697,7 @@
                 <div class="content">
                     <h3>Actuarial / Risk Analyst</h3>
                     <h4>Mohandes Insurance</h4>
-                    <p>Designed the first ERM framework, mitigating <strong>50+ critical risks</strong> in the first
-                        year.</p>
+                    <p>Designed the company's first <strong>ISO 31000</strong> enterprise risk-management framework and built risk-quantification and capital-adequacy models.</p>
                 </div>
             </div>
         </div>
@@ -695,7 +710,7 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
             <div class="glass reveal-explode">
                 <h4 style="color: var(--gold);">Konecta Sign / Wasel v5 Router Engine</h4>
-                <p style="font-size: 0.9rem;">Evolved from a cloud-first vision LLM monolith to a hybrid edge-server architecture using client-side MediaPipe landmarks, backend Dynamic Time Warping (DTW) matching cache for common phrases, and Gemini fallback — reducing API costs by 80% and achieving sub-5ms latency.</p>
+                <p style="font-size: 0.9rem;">Evolved from a cloud-first vision LLM monolith to a hybrid edge-server architecture using client-side MediaPipe landmarks, backend Dynamic Time Warping (DTW) matching cache for common phrases, and Gemini fallback — cutting GCP API costs by 70%+ and server compute by 90% through client-side processing.</p>
                 <div class="mini-tags"><span>MediaPipe</span> <span>DTW</span> <span>Gemini</span> <span>Flask</span> <span>Socket.IO</span> <span>Docker</span></div>
             </div>
             <div class="glass reveal-explode">
@@ -714,9 +729,9 @@
                 <div class="mini-tags"><span>Gemini 3</span> <span>CrewAI</span> <span>Google Maps API</span> <span>Hackathon</span></div>
             </div>
             <div class="glass reveal-explode">
-                <h4 style="color: var(--primary-neon);">Actuarial Pricing Orchestrator</h4>
-                <p style="font-size: 0.9rem;">End-to-end Machine Learning pricing and reserves engine transitioning from Jupyter Notebooks to production-grade ML ensembles. Integrates DeepSurv survival models with wearable device telemetry and GlycanAge biomarkers.</p>
-                <div class="mini-tags"><span>Streamlit</span> <span>Python</span> <span>XGBoost</span> <span>CatBoost</span> <span>LightGBM</span> <span>DeepSurv</span></div>
+                <h4 style="color: var(--primary-neon);">Actuarial Studio (Takamol AI)</h4>
+                <p style="font-size: 0.9rem;">Explainable premium calculator showing how each risk factor moves the price, workers' compensation claim-cost prediction with reasons, and a 10-year projection of a universal health insurance fund under stress scenarios.</p>
+                <div class="mini-tags"><span>Python</span> <span>Explainable AI</span> <span>XGBoost</span> <span>Credibility</span> <span>Live demo</span></div>
             </div>
             <div class="glass reveal-explode">
                 <h4 style="color: var(--primary-neon);">Smart DMS RAG</h4>
