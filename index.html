@@ -262,6 +262,15 @@
                 font-size: 0.95rem;
             }
         }
+            .hero-side { display: flex; flex-direction: column; align-items: center; gap: 4px; max-width: 420px; padding-top: 120px; }
+        .hero-side .hero-visual { width: 320px; height: 300px; }
+        .founder-story { margin: 0; padding: 22px 24px; border-radius: 18px; background: rgba(10, 18, 40, 0.78); color: var(--text-main, #e8eefc); border: 1px solid rgba(255, 215, 0, 0.35); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35); }
+        .founder-story .tag { display: block; font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; font-weight: 700; }
+        .founder-story p { margin: 0 0 10px; font-size: 0.95rem; line-height: 1.65; color: var(--text-main, #e8eefc); }
+        .founder-story p.mission { margin: 0; font-weight: 700; color: var(--gold); }
+        .kpi small { display: block; margin-top: 4px; font-size: 0.72rem; color: var(--text-dim); }
+        .research-take { margin: 18px 0 0; padding: 14px 18px; border-left: 3px solid var(--gold); background: rgba(255, 215, 0, 0.06); color: var(--text-main, #e8eefc); border-radius: 0 12px 12px 0; }
+        @media (max-width: 900px) { .hero-side { max-width: 100%; margin-top: 10px; } }
     </style>
 </head>
 
@@ -306,11 +315,19 @@
                 <a href="https://www.linkedin.com/company/takamol-ai" class="btn-ghost" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> Takamol AI on LinkedIn</a>
             </div>
         </div>
-        <div class="hero-visual">
-            <div class="profile-container">
-                <img src="profile.jpg.png" alt="Ahmed Eltaweel" class="profile-pic">
+        <div class="hero-side">
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <img src="profile.jpg.png" alt="Ahmed Eltaweel" class="profile-pic">
+                </div>
+                <div class="ai-orb"></div>
             </div>
-            <div class="ai-orb"></div>
+            <figure class="founder-story">
+                <span class="tag">The story behind Takamol</span>
+                <p>My journey took me from <strong>Actuarial / Risk Analyst at Mohandes Insurance</strong>, where I built the company's first ISO 31000 risk framework, to <strong>Senior Actuarial &amp; Data Analyst at Egypt's Financial Regulatory Authority</strong>, where I reviewed the pricing of new life, health and savings products, to <strong>AI Product Solution Architect at Konecta Global</strong>, where I lead Konecta Sign for sign-language access. In every role I saw the same gap: decisions about people's health, money, services and access too often rest on averages and scattered data rather than clear, trusted insight — and my M.Sc. at Cairo University showed how much more accurately risk can be measured when the right data is used well.</p>
+                <p><strong>That is what inspired Takamol</strong>, which I founded in 2026 — to put every tool I have, from actuarial science to AI, into integrated solutions for insurance and health, government and enterprise, customer experience and accessibility, utilities and talent — all serving one mission: healthier lives, fairer and more accessible services, and better decisions for Egyptian and Arab communities.</p>
+                <p class="mission">Built in Egypt, for the Arab world — with pride, rigor and trust.</p>
+            </figure>
         </div>
     </section>
 
@@ -449,10 +466,12 @@
             <h3>Applying AI Tools to Improve Current Actuarial Pricing and Risk Models Using Wearable Devices Data</h3>
             <p style="color: var(--text-dim); margin: 0;">Cairo University — Faculty of Graduate Studies for Statistical Research.<br>Supervisors: Prof. Abdelhadi Nabih Ahmed and Prof. Mohamed Reda Abonazel.</p>
             <div class="kpis">
-                <div class="kpi"><strong>8,839</strong><span>participants</span></div>
-                <div class="kpi"><strong>2,043</strong><span>deaths observed</span></div>
-                <div class="kpi"><strong>0.8604 → 0.8759</strong><span>held-out Harrell's C</span></div>
+                <div class="kpi"><strong>0.88</strong><span>risk-ranking accuracy (C-index)</span><small>0.5 = chance · 1.0 = perfect</small></div>
+                <div class="kpi"><strong>0.91</strong><span>10-year mortality AUC</span><small>on unseen participants</small></div>
+                <div class="kpi"><strong>13.3 yrs</strong><span>average follow-up</span><small>U.S. national cohort</small></div>
+                <div class="kpi"><strong>8,839</strong><span>adults studied</span><small>2,043 deaths observed</small></div>
             </div>
+            <p class="research-take"><strong>Key finding:</strong> biological-age markers ranked who is at higher risk better than chronological age (C-index 0.876 vs 0.860) — the scientific foundation for fairer, health-based insurance pricing.</p>
             <p style="color: var(--text-dim); margin: 16px 0 0; font-size: 0.88rem;"><i class="fas fa-award" style="color: var(--gold);"></i> B.Sc. in Actuarial Science — Cairo University (2016).</p>
         </div>
         <h3 class="sub-title">Journal Papers</h3>
