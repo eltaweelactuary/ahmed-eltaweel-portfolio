@@ -53,7 +53,7 @@ Secure document indexing, storage, and intelligent retrieval system.
 National-scale dashboard for tax reporting and automated compliance validation.
 - **Stack:** HTML/CSS/JS, Data Visualization
 
-### 5. Wasel Green Path (Sustainability AI)
+### 5. Tawasol Green Path (Sustainability AI)
 AI agent for sustainable transportation route optimization.
 - **Stack:** Python, CrewAI, Google Maps API
 
